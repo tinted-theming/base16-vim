@@ -417,6 +417,14 @@ call <sid>hi("StartifySelect",   s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("StartifySlash",    s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("StartifySpecial",  s:gui03, "", s:cterm03, "", "", "")
 
+" Neovim Treesitter highlighting
+call <sid>hi("TSFunction",        s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("TSKeywordFunction", s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("TSMethod",          s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("TSProperty",        s:gui0A, "", s:cterm0A, "", "", "")
+call <sid>hi("TSPunctBracket",    s:gui0C, "", s:cterm0C, "", "", "")
+call <sid>hi("TSType",            s:gui08, "", s:cterm08, "", "none", "")
+
 " Java highlighting
 call <sid>hi("javaOperator",     s:gui0D, "", s:cterm0D, "", "", "")
 
