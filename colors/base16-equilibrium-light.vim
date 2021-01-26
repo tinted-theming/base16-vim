@@ -425,6 +425,14 @@ call <sid>hi("TSProperty",        s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("TSPunctBracket",    s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("TSType",            s:gui08, "", s:cterm08, "", "none", "")
 
+" LSP highlighting
+if has("nvim")
+  call <sid>hi("LspDiagnosticsDefaultError",       s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("LspDiagnosticsDefaultWarning",     s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("LspDiagnosticsDefaultInformation", s:gui05, "", s:cterm05, "", "", "")
+  call <sid>hi("LspDiagnosticsDefaultHint",        s:gui03, "", s:cterm03, "", "", "")
+endif
+
 " Java highlighting
 call <sid>hi("javaOperator",     s:gui0D, "", s:cterm0D, "", "", "")
 
