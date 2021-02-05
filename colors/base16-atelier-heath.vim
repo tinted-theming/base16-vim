@@ -401,10 +401,10 @@ call <sid>hi("SignifySignChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "
 call <sid>hi("SignifySignDelete",  s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
 
 " Spelling highlighting
-call <sid>hi("SpellBad",     "", "", "", "", "undercurl", s:gui08)
-call <sid>hi("SpellLocal",   "", "", "", "", "undercurl", s:gui0C)
-call <sid>hi("SpellCap",     "", "", "", "", "undercurl", s:gui0D)
-call <sid>hi("SpellRare",    "", "", "", "", "undercurl", s:gui0E)
+call <sid>hi("SpellBad",     s:gui00, s:gui08, s:cterm00, s:cterm08, "undercurl", s:gui08)
+call <sid>hi("SpellLocal",   s:gui00, s:gui0C, s:cterm00, s:cterm0C, "undercurl", s:gui0C)
+call <sid>hi("SpellCap",     s:gui00, s:gui0D, s:cterm00, s:cterm0D, "undercurl", s:gui0D)
+call <sid>hi("SpellRare",    s:gui00, s:gui0E, s:cterm00, s:cterm0E, "undercurl", s:gui0E)
 
 " Startify highlighting
 call <sid>hi("StartifyBracket",  s:gui03, "", s:cterm03, "", "", "")
