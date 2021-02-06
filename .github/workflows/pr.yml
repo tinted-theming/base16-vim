@@ -1,4 +1,4 @@
-name: Check that `make build` does not produce additional changes
+name: Check that running `make` does not produce additional changes
 on:
   pull_request:
     branches:
