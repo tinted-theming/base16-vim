@@ -1,9 +1,10 @@
+name: Check that `make build` does not produce additional changes
 on:
   pull_request:
     branches:
       - master
 jobs:
-  run:
+  check:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Python
