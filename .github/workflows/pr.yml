@@ -17,7 +17,7 @@ jobs:
         run: pip install pybase16-builder
       - name: Fetch the repository code
         uses: actions/checkout@v2
-      - name: Run make build
-        run: make build
+      - name: Run make
+        run: make
       - name: Check if there are changes
         run: git diff --exit-code
