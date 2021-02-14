@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/chriskempson/base16-vim)
 " by Chris Kempson (http://chriskempson.com)
-" Espresso scheme by Alex Mirrington (https://github.com/alexmirrington)
+" Espresso scheme by Unknown. Maintained by Alex Mirrington (https://github.com/alexmirrington)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
