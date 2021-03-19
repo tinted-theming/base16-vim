@@ -6,3 +6,5 @@ templates/*
 
 !/templates/config.yaml
 !/templates/default.mustache
+
+.venv

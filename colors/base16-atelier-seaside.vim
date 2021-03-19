@@ -231,7 +231,7 @@ call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none", ""
 call <sid>hi("VertSplit",     s:gui01, s:gui00, s:cterm01, s:cterm00, "none", "")
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none", "")
-call <sid>hi("CursorLine",    "", s:gui02, "", s:cterm02, "none", "")
+call <sid>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorLineNr",  s:gui04, s:gui01, s:cterm04, s:cterm01, "bold", "")
 call <sid>hi("QuickFixLine",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("PMenu",         s:gui05, s:gui02, s:cterm05, s:cterm02, "none", "")
@@ -317,14 +317,16 @@ hi default link ClapCurrentSelection  CursorLine
 hi default link ClapNoMatchesFound    ErrorFloat
 
 " Coc highlighting
-hi default link CocErrorSign     ErrorSign
-hi default link CocWarningSign   WarningSign
-hi default link CocInfoSign      InfoSign
-hi default link CocHintSign      HintSign
-hi default link CocErrorFloat    ErrorFloat
-hi default link CocWarningFloat  WarningFloat
-hi default link CocInfoFloat     InfoFloat
-hi default link CocHintFloat     HintFloat
+hi default link CocErrorSign         ErrorSign
+hi default link CocWarningSign       WarningSign
+hi default link CocInfoSign          InfoSign
+hi default link CocHintSign          HintSign
+
+hi default link CocErrorFloat        ErrorFloat
+hi default link CocWarningFloat      WarningFloat
+hi default link CocInfoFloat         InfoFloat
+hi default link CocHintFloat         HintFloat
+
 hi default link CocErrorHighlight    ErrorHighlight
 hi default link CocWarningHighlight  WarningHighlight
 hi default link CocInfoHighlight     InfoHighlight
@@ -334,6 +336,7 @@ call <sid>hi("CocHighlightText",   s:gui0A, s:gui01,  s:cterm0A, s:cterm01, "", 
 call <sid>hi("CocHighlightWrite",  s:gui08, s:gui01,  s:cterm08, s:cterm01, "", "")
 call <sid>hi("CocListMode",        s:gui01, s:gui0B,  s:cterm01, s:cterm0B, "bold", "")
 call <sid>hi("CocListPath",        s:gui01, s:gui0B,  s:cterm01, s:cterm0B, "", "")
+call <sid>hi("CocSessionsName",    s:gui05, "", "", "", "", "")
 
 " CSS highlighting
 call <sid>hi("cssBraces",      s:gui05, "", s:cterm05, "", "", "")
