@@ -1,5 +1,6 @@
 | This is a fork of [chriskempson](https://github.com/chriskempson)'s [base16-vim](https://github.com/chriskempson/base16-vim) which refreshes and commits new themes weekly automatically and has a documented build process. |
-| --- |
+| :-- |
+| Development has continued beyond the automation of the repository since the moment of the fork. See [the full diff here](https://github.com/fnune/base16-vim/compare/c8a7da6...HEAD). |
 
 # Base16 Vim
 See the [Base16 repository](https://github.com/chriskempson/base16) for more information.
@@ -7,7 +8,19 @@ This theme was built with [base16-builder-python](https://github.com/InspectorMu
 
 Supports graphical Vim and console Vim.
 
-![Base16 Vim](https://raw.github.com/fnune/base16-vim/master/base16-vim.png)
+Over [70 themes](https://github.com/chriskempson/base16-schemes-source/blob/master/list.yaml) plus light/dark variations are available. Here are some of my favorites:
+
+The `classic-dark` theme:
+
+![base16-vim classic-dark](/screenshots/base16-vim-screenshot-classic-dark.png)
+
+The `horizon-dark` theme:
+
+![base16-vim horizon-dark](/screenshots/base16-vim-screenshot-horizon-dark.png)
+
+The `onedark` theme:
+
+![base16-vim onedark](/screenshots/base16-vim-screenshot-onedark.png)
 
 ## Terminal Themes
 For terminal Vim (non-gui) please ensure you are using a base16 terminal theme.
