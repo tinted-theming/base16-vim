@@ -295,6 +295,10 @@ call <sid>hi("SpellLocal",   "", "", s:cterm00, s:cterm0C, "undercurl", s:gui0C)
 call <sid>hi("SpellCap",     "", "", s:cterm00, s:cterm0D, "undercurl", s:gui0D)
 call <sid>hi("SpellRare",    "", "", s:cterm00, s:cterm0E, "undercurl", s:gui0E)
 
+call <sid>hi("ReferenceText",   s:gui01, s:gui0A, s:cterm01, s:cterm0A, "", "")
+call <sid>hi("ReferenceRead",   s:gui01, s:gui0B, s:cterm01, s:cterm0B, "", "")
+call <sid>hi("ReferenceWrite",  s:gui01, s:gui08, s:cterm01, s:cterm08, "", "")
+
 " C highlighting
 call <sid>hi("cOperator",   s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("cPreCondit",  s:gui0E, "", s:cterm0E, "", "", "")
@@ -484,10 +488,29 @@ endif
 
 " LSP highlighting
 if has("nvim")
-  call <sid>hi("LspDiagnosticsDefaultError",       s:gui08, "", s:cterm08, "", "", "")
-  call <sid>hi("LspDiagnosticsDefaultWarning",     s:gui09, "", s:cterm09, "", "", "")
-  call <sid>hi("LspDiagnosticsDefaultInformation", s:gui05, "", s:cterm05, "", "", "")
-  call <sid>hi("LspDiagnosticsDefaultHint",        s:gui03, "", s:cterm03, "", "", "")
+  hi default link LspDiagnosticsSignError    ErrorSign
+  hi default link LspDiagnosticsSignWarning  WarningSign
+  hi default link LspDiagnosticsSignInfo     InfoSign
+  hi default link LspDiagnosticsSignHint     HintSign
+
+  hi default link LspDiagnosticsVirtualTextError    ErrorSign
+  hi default link LspDiagnosticsVirtualTextWarning  WarningSign
+  hi default link LspDiagnosticsVirtualTextInfo     InfoSign
+  hi default link LspDiagnosticsVirtualTextHint     HintSign
+
+  hi default link LspDiagnosticsFloatingError    ErrorFloat
+  hi default link LspDiagnosticsFloatingWarning  WarningFloat
+  hi default link LspDiagnosticsFloatingInfo     InfoFloat
+  hi default link LspDiagnosticsFloatingHint     HintFloat
+
+  hi default link LspDiagnosticsUnderlineError    ErrorHighlight
+  hi default link LspDiagnosticsUnderlineWarning  WarningHighlight
+  hi default link LspDiagnosticsUnderlineInfo     InfoHighlight
+  hi default link LspDiagnosticsUnderlineHint     HintHighlight
+
+  hi default link LsoReferenceText   ReferenceText
+  hi default link LsoReferenceRead   ReferenceRead
+  hi default link LsoReferenceWrite  ReferenceWrite
 endif
 
 " Java highlighting
