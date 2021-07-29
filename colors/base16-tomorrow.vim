@@ -351,6 +351,7 @@ hi default link CocSem_colon             Normal
 hi default link CocSem_comma             Normal
 hi default link CocSem_comment           Comment
 hi default link CocSem_comparison        Keyword
+hi default link CocSem_concept           Keyword
 hi default link CocSem_constParameter    Identifier
 hi default link CocSem_dependent         Keyword
 hi default link CocSem_dot               Keyword
@@ -382,6 +383,7 @@ hi default link CocSem_struct            Structure
 hi default link CocSem_type              Type
 hi default link CocSem_typeAlias         Type
 hi default link CocSem_typeParameter     Type
+hi default link CocSem_unknown           Normal
 hi default link CocSem_variable          Identifier
 
 call <sid>hi("CocHighlightRead",   s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "", "")
