@@ -523,16 +523,8 @@ call <sid>hi("StartifySelect",   s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("StartifySlash",    s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("StartifySpecial",  s:gui03, "", s:cterm03, "", "", "")
 
-" Neovim Treesitter highlighting
+" Treesitter-refactor highlighting
 if has("nvim")
-  call <sid>hi("TSFunction",        s:gui0D, "", s:cterm0D, "", "", "")
-  call <sid>hi("TSKeywordFunction", s:gui0E, "", s:cterm0E, "", "", "")
-  call <sid>hi("TSMethod",          s:gui0D, "", s:cterm0D, "", "", "")
-  call <sid>hi("TSProperty",        s:gui0A, "", s:cterm0A, "", "", "")
-  call <sid>hi("TSPunctBracket",    s:gui0C, "", s:cterm0C, "", "", "")
-  call <sid>hi("TSType",            s:gui08, "", s:cterm08, "", "none", "")
-
-  " Treesitter-refactor highlighting
   call <sid>hi("TSDefinition",       "", s:gui03, "", s:cterm03, "", "")
   call <sid>hi("TSDefinitionUsage",  "", s:gui02, "", s:cterm02, "none", "")
 endif
