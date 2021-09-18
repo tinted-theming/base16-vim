@@ -95,18 +95,6 @@ augroup on_change_colorschema
 augroup END
 ```
 
-## Building
-Dependencies:
-
-- Python, at least version 3.5
-- The `pybase16` command from [base16-builder-python](https://github.com/InspectorMustache/base16-builder-python)
-- The `make` command
-
-```
-# Install dependencies (you probably already have pip/pip3 and make)
-apt install build-essential # for make
-pip3 install pybase16-builder
-
-# Build the packages
-make
-```
+## Contributing
+See [`CONTRIBUTING.md`](/CONTRIBUTING.md), which contains building and
+contributing instructions.
