@@ -6,6 +6,8 @@ Fixes #ISSUE_NUMBER
 
 # Checklist
 
-- [ ] I have built the project after my changes following [the build instructions](https://github.com/fnune/base16-vim#building) using `make`
+- [ ] I have built the project after my changes following [the build
+  instructions](https://github.com/fnune/base16-vim/blob/master/CONTRIBUTING.md#building)
+  using `make`
 - [ ] I have confirmed that my changes produce no regressions after building
 - [ ] I have pushed the built files to this pull request
