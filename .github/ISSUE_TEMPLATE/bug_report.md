@@ -21,5 +21,11 @@ Vim or Neovim:
 Vim or Neovim version:
 Any other plugins you may consider relevant:
 
+**Minimal configuration file**
+```vim
+" Add a minimal configuration file to dramatically increase
+" your chances of receiving help from a maintainer.
+```
+
 **Additional context**
 <!-- Add any other context about the problem here. -->
