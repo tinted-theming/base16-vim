@@ -551,9 +551,9 @@ if has("nvim")
   hi default link LspDiagnosticsUnderlineInfo     InfoHighlight
   hi default link LspDiagnosticsUnderlineHint     HintHighlight
 
-  hi default link LsoReferenceText   ReferenceText
-  hi default link LsoReferenceRead   ReferenceRead
-  hi default link LsoReferenceWrite  ReferenceWrite
+  hi default link LspReferenceText   ReferenceText
+  hi default link LspReferenceRead   ReferenceRead
+  hi default link LspReferenceWrite  ReferenceWrite
 endif
 
 " Java highlighting
