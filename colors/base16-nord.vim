@@ -313,78 +313,78 @@ call <sid>hi("csContextualStatement",   s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("csNewDecleration",        s:gui08, "", s:cterm08, "", "", "")
 
 " Clap highlighting
-hi default link ClapInput             ColorColumn
-hi default link ClapSpinner           ColorColumn
-hi default link ClapDisplay           Default
-hi default link ClapPreview           ColorColumn
-hi default link ClapCurrentSelection  CursorLine
-hi default link ClapNoMatchesFound    ErrorFloat
+hi! link ClapInput             ColorColumn
+hi! link ClapSpinner           ColorColumn
+hi! link ClapDisplay           Default
+hi! link ClapPreview           ColorColumn
+hi! link ClapCurrentSelection  CursorLine
+hi! link ClapNoMatchesFound    ErrorFloat
 
 " Coc highlighting
-hi default link CocErrorSign         ErrorSign
-hi default link CocWarningSign       WarningSign
-hi default link CocInfoSign          InfoSign
-hi default link CocHintSign          HintSign
+hi! link CocErrorSign         ErrorSign
+hi! link CocWarningSign       WarningSign
+hi! link CocInfoSign          InfoSign
+hi! link CocHintSign          HintSign
 
-hi default link CocErrorFloat        ErrorFloat
-hi default link CocWarningFloat      WarningFloat
-hi default link CocInfoFloat         InfoFloat
-hi default link CocHintFloat         HintFloat
+hi! link CocErrorFloat        ErrorFloat
+hi! link CocWarningFloat      WarningFloat
+hi! link CocInfoFloat         InfoFloat
+hi! link CocHintFloat         HintFloat
 
-hi default link CocErrorHighlight    ErrorHighlight
-hi default link CocWarningHighlight  WarningHighlight
-hi default link CocInfoHighlight     InfoHighlight
-hi default link CocHintHighlight     HintHighlight
+hi! link CocErrorHighlight    ErrorHighlight
+hi! link CocWarningHighlight  WarningHighlight
+hi! link CocInfoHighlight     InfoHighlight
+hi! link CocHintHighlight     HintHighlight
 
-hi default link CocSem_angle             Keyword
-hi default link CocSem_annotation        Keyword
-hi default link CocSem_attribute         Type
-hi default link CocSem_bitwise           Keyword
-hi default link CocSem_boolean           Boolean
-hi default link CocSem_brace             Normal
-hi default link CocSem_bracket           Normal
-hi default link CocSem_builtinAttribute  Type
-hi default link CocSem_builtinType       Type
-hi default link CocSem_character         String
-hi default link CocSem_class             Structure
-hi default link CocSem_colon             Normal
-hi default link CocSem_comma             Normal
-hi default link CocSem_comment           Comment
-hi default link CocSem_comparison        Keyword
-hi default link CocSem_concept           Keyword
-hi default link CocSem_constParameter    Identifier
-hi default link CocSem_dependent         Keyword
-hi default link CocSem_dot               Keyword
-hi default link CocSem_enum              Structure
-hi default link CocSem_enumMember        Constant
-hi default link CocSem_escapeSequence    Type
-hi default link CocSem_event             Identifier
-hi default link CocSem_formatSpecifier   Type
-hi default link CocSem_function          Function
-hi default link CocSem_interface         Type
-hi default link CocSem_keyword           Keyword
-hi default link CocSem_label             Keyword
-hi default link CocSem_logical           Keyword
-hi default link CocSem_macro             Macro
-hi default link CocSem_method            Function
-hi default link CocSem_modifier          Keyword
-hi default link CocSem_namespace         Identifier
-hi default link CocSem_number            Number
-hi default link CocSem_operator          Operator
-hi default link CocSem_parameter         Identifier
-hi default link CocSem_parenthesis       Normal
-hi default link CocSem_property          Identifier
-hi default link CocSem_punctuation       Keyword
-hi default link CocSem_regexp            Type
-hi default link CocSem_selfKeyword       Constant
-hi default link CocSem_semicolon         Normal
-hi default link CocSem_string            String
-hi default link CocSem_struct            Structure
-hi default link CocSem_type              Type
-hi default link CocSem_typeAlias         Type
-hi default link CocSem_typeParameter     Type
-hi default link CocSem_unknown           Normal
-hi default link CocSem_variable          Identifier
+hi! link CocSem_angle             Keyword
+hi! link CocSem_annotation        Keyword
+hi! link CocSem_attribute         Type
+hi! link CocSem_bitwise           Keyword
+hi! link CocSem_boolean           Boolean
+hi! link CocSem_brace             Normal
+hi! link CocSem_bracket           Normal
+hi! link CocSem_builtinAttribute  Type
+hi! link CocSem_builtinType       Type
+hi! link CocSem_character         String
+hi! link CocSem_class             Structure
+hi! link CocSem_colon             Normal
+hi! link CocSem_comma             Normal
+hi! link CocSem_comment           Comment
+hi! link CocSem_comparison        Keyword
+hi! link CocSem_concept           Keyword
+hi! link CocSem_constParameter    Identifier
+hi! link CocSem_dependent         Keyword
+hi! link CocSem_dot               Keyword
+hi! link CocSem_enum              Structure
+hi! link CocSem_enumMember        Constant
+hi! link CocSem_escapeSequence    Type
+hi! link CocSem_event             Identifier
+hi! link CocSem_formatSpecifier   Type
+hi! link CocSem_function          Function
+hi! link CocSem_interface         Type
+hi! link CocSem_keyword           Keyword
+hi! link CocSem_label             Keyword
+hi! link CocSem_logical           Keyword
+hi! link CocSem_macro             Macro
+hi! link CocSem_method            Function
+hi! link CocSem_modifier          Keyword
+hi! link CocSem_namespace         Identifier
+hi! link CocSem_number            Number
+hi! link CocSem_operator          Operator
+hi! link CocSem_parameter         Identifier
+hi! link CocSem_parenthesis       Normal
+hi! link CocSem_property          Identifier
+hi! link CocSem_punctuation       Keyword
+hi! link CocSem_regexp            Type
+hi! link CocSem_selfKeyword       Constant
+hi! link CocSem_semicolon         Normal
+hi! link CocSem_string            String
+hi! link CocSem_struct            Structure
+hi! link CocSem_type              Type
+hi! link CocSem_typeAlias         Type
+hi! link CocSem_typeParameter     Type
+hi! link CocSem_unknown           Normal
+hi! link CocSem_variable          Identifier
 
 call <sid>hi("CocHighlightRead",   s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "", "")
 call <sid>hi("CocHighlightText",   s:gui0A, s:gui01,  s:cterm0A, s:cterm01, "", "")
@@ -427,10 +427,10 @@ call <sid>hi("gitcommitDiscardedFile",  s:gui08, "", s:cterm08, "", "bold", "")
 call <sid>hi("gitcommitSelectedFile",   s:gui0B, "", s:cterm0B, "", "bold", "")
 
 " GitGutter highlighting
-hi default link GitGutterAdd            GitAddSign
-hi default link GitGutterChange         GitChangeSign  
-hi default link GitGutterDelete         GitDeleteSign
-hi default link GitGutterChangeDelete   GitChangeDeleteSign
+hi! link GitGutterAdd            GitAddSign
+hi! link GitGutterChange         GitChangeSign  
+hi! link GitGutterDelete         GitDeleteSign
+hi! link GitGutterChangeDelete   GitChangeDeleteSign
 
 " HTML highlighting
 call <sid>hi("htmlBold",    s:gui05, "", s:cterm0A, "", "bold", "")
@@ -507,9 +507,9 @@ call <sid>hi("sassMixing",     s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("sassMixinName",  s:gui0D, "", s:cterm0D, "", "", "")
 
 " Signify highlighting
-hi default link SignifySignAdd    GitAddSign
-hi default link SignifySignChange GitChangeSign
-hi default link SignifySignDelete GitDeleteSign
+hi! link SignifySignAdd    GitAddSign
+hi! link SignifySignChange GitChangeSign
+hi! link SignifySignDelete GitDeleteSign
 
 " Startify highlighting
 call <sid>hi("StartifyBracket",  s:gui03, "", s:cterm03, "", "", "")
@@ -531,29 +531,29 @@ endif
 
 " LSP highlighting
 if has("nvim")
-  hi default link LspDiagnosticsSignError    ErrorSign
-  hi default link LspDiagnosticsSignWarning  WarningSign
-  hi default link LspDiagnosticsSignInfo     InfoSign
-  hi default link LspDiagnosticsSignHint     HintSign
+  hi! link LspDiagnosticsSignError    ErrorSign
+  hi! link LspDiagnosticsSignWarning  WarningSign
+  hi! link LspDiagnosticsSignInfo     InfoSign
+  hi! link LspDiagnosticsSignHint     HintSign
 
-  hi default link LspDiagnosticsVirtualTextError    ErrorSign
-  hi default link LspDiagnosticsVirtualTextWarning  WarningSign
-  hi default link LspDiagnosticsVirtualTextInfo     InfoSign
-  hi default link LspDiagnosticsVirtualTextHint     HintSign
+  hi! link LspDiagnosticsVirtualTextError    ErrorSign
+  hi! link LspDiagnosticsVirtualTextWarning  WarningSign
+  hi! link LspDiagnosticsVirtualTextInfo     InfoSign
+  hi! link LspDiagnosticsVirtualTextHint     HintSign
 
-  hi default link LspDiagnosticsFloatingError    ErrorFloat
-  hi default link LspDiagnosticsFloatingWarning  WarningFloat
-  hi default link LspDiagnosticsFloatingInfo     InfoFloat
-  hi default link LspDiagnosticsFloatingHint     HintFloat
+  hi! link LspDiagnosticsFloatingError    ErrorFloat
+  hi! link LspDiagnosticsFloatingWarning  WarningFloat
+  hi! link LspDiagnosticsFloatingInfo     InfoFloat
+  hi! link LspDiagnosticsFloatingHint     HintFloat
 
-  hi default link LspDiagnosticsUnderlineError    ErrorHighlight
-  hi default link LspDiagnosticsUnderlineWarning  WarningHighlight
-  hi default link LspDiagnosticsUnderlineInfo     InfoHighlight
-  hi default link LspDiagnosticsUnderlineHint     HintHighlight
+  hi! link LspDiagnosticsUnderlineError    ErrorHighlight
+  hi! link LspDiagnosticsUnderlineWarning  WarningHighlight
+  hi! link LspDiagnosticsUnderlineInfo     InfoHighlight
+  hi! link LspDiagnosticsUnderlineHint     HintHighlight
 
-  hi default link LspReferenceText   ReferenceText
-  hi default link LspReferenceRead   ReferenceRead
-  hi default link LspReferenceWrite  ReferenceWrite
+  hi! link LspReferenceText   ReferenceText
+  hi! link LspReferenceRead   ReferenceRead
+  hi! link LspReferenceWrite  ReferenceWrite
 endif
 
 " Java highlighting
