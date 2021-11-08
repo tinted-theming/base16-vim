@@ -531,6 +531,27 @@ endif
 
 " LSP highlighting
 if has("nvim")
+  hi! link DiagnosticError  ErrorSign
+  hi! link DiagnosticWarn   WarningSign
+  hi! link DiagnosticInfo   InfoSign
+  hi! link DiagnosticHint   HintSign
+
+  hi! link DiagnosticFloatingError  ErrorFloat
+  hi! link DiagnosticFloatingWarn   WarningFloat
+  hi! link DiagnosticFloatingInfo   InfoFloat
+  hi! link DiagnosticFloatingHint   HintFloat
+
+  hi! link DiagnosticUnderlineError  ErrorHighlight
+  hi! link DiagnosticUnderlineWarn   WarningHighlight
+  hi! link DiagnosticUnderlineInfo   InfoHighlight
+  hi! link DiagnosticUnderlineHint   HintHighlight
+
+  hi! link DiagnosticsVirtualTextError    ErrorSign
+  hi! link DiagnosticsVirtualTextWarning  WarningSign
+  hi! link DiagnosticsVirtualTextInfo     InfoSign
+  hi! link DiagnosticsVirtualTextHint     HintSign
+
+  " Remove untill endif on next nvim release
   hi! link LspDiagnosticsSignError    ErrorSign
   hi! link LspDiagnosticsSignWarning  WarningSign
   hi! link LspDiagnosticsSignInfo     InfoSign
