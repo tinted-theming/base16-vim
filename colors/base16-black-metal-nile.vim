@@ -407,7 +407,6 @@ call <sid>hi("cssColor",       s:gui0C, "", s:cterm0C, "", "", "")
 hi! link CmpItemAbbrDeprecated  Deprecated 
 hi! link CmpItemAbbrMatch       SearchMatch
 hi! link CmpItemAbbrMatchFuzzy  SearchMatch
-" call <sid>hi("CmpItemKindDefault",  s:gui0A, "", s:cterm0A, "", "", "")
 hi! link CmpItemKindText TSText
 hi! link CmpItemKindMethod TSMethod
 hi! link CmpItemKindFunction TSFunction
