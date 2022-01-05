@@ -510,6 +510,9 @@ call <sid>hi("markdownError",             s:gui05, s:gui00, s:cterm05, s:cterm00
 call <sid>hi("markdownCodeBlock",         s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("markdownHeadingDelimiter",  s:gui0D, "", s:cterm0D, "", "", "")
 
+" Matchup
+call <sid>hi("MatchWord",  s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "underline", "")
+
 " NERDTree
 call <sid>hi("NERDTreeDirSlash",  s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("NERDTreeExecFile",  s:gui05, "", s:cterm05, "", "", "")
