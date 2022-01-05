@@ -436,7 +436,7 @@ hi! link CmpItemKindTypeParameter TSType
 " Diff
 call <sid>hi("DiffAdd",      s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "", "")
 call <sid>hi("DiffChange",   s:gui05, s:gui01,  s:cterm05, s:cterm01, "", "")
-call <sid>hi("DiffDelete",   s:gui08, s:gui00,  s:cterm08, s:cterm00, "", "")
+call <sid>hi("DiffDelete",   s:gui02, s:gui00,  s:cterm02, s:cterm00, "", "")
 call <sid>hi("DiffText",     s:gui0D, s:gui01,  s:cterm0D, s:cterm01, "", "")
 call <sid>hi("DiffAdded",    s:gui0B, s:gui00,  s:cterm0B, s:cterm00, "", "")
 call <sid>hi("DiffFile",     s:gui08, s:gui00,  s:cterm08, s:cterm00, "", "")
