@@ -25,7 +25,8 @@ make
 After you've installed the build dependencies, and before you submit your PR:
 
 - Run `make` after you've made your changes. This will build all the themes
-  based on the changes you've made.
+  based on the changes you've made. For instance, instead of manually editing
+  files under `colors/`, you should edit `templates/default.mustache`
 - Make sure to commit the changes from `make` and include them in your PR.
 - Please abide by what's requested in the [PR
   template](/.github/pull_request_template.md).
