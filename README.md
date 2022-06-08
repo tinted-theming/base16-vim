@@ -59,6 +59,14 @@ git clone git://github.com/fnune/base16-vim.git base16
 cp base16/colors/*.vim .
 ```
 
+### Manual neovim
+
+```bash
+cd ~/.config/nvim/colors
+git clone git://github.com/fnune/base16-vim.git base16
+cp base16/colors/*.vim .
+```
+
 ## 256 colorspace
 
 If using a Base16 terminal theme designed to keep the 16 ANSI colors intact (a "256" variation) **and** have sucessfully modified your 256 colorspace with [base16-shell](https://github.com/chriskempson/base16-shell) you'll need to add the following to your `~/.vimrc` **before** the colorsheme declaration.
