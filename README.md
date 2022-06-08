@@ -4,7 +4,7 @@ This theme was built with [base16-builder-python](https://github.com/InspectorMu
 
 Supports graphical Vim and console Vim.
 
-Over [70 themes](https://github.com/chriskempson/base16-schemes-source/blob/master/list.yaml) plus light/dark variations are available. Here are some of my favorites:
+Over [70 themes](https://github.com/chriskempson/base16-schemes-source/blob/master/list.yaml) plus light/dark variations are available. Here are some of our favorites:
 
 The `classic-dark` theme:
 
@@ -20,9 +20,7 @@ The `onedark` theme:
 
 ## Terminal Themes
 
-For terminal Vim (non-gui) please ensure you are using a base16 terminal theme.
-
-* [iTerm2](https://github.com/chriskempson/base16-iterm2)
+For terminal Vim (non-gui) please ensure you are using a base16 terminal theme. Have a look at the list of [official](https://github.com/base16-project/base16#official-templates) and [unofficial](https://github.com/base16-project/base16#unofficial-templates) themes for your terminal of choice.
 
 ## Installation
 
