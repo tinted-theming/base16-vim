@@ -1,7 +1,9 @@
 name: Update the repository with the latest base16 colorschemes
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "* * * * *" # https://crontab.guru/every-minute
+    - cron: "* * * * 0" # https://crontab.guru/every-week
+
 jobs:
   run:
     runs-on: ubuntu-latest
