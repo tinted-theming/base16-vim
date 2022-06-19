@@ -17,7 +17,7 @@ jobs:
       - name: Install pybase16
         run: pip install pybase16-builder
       - name: Fetch the repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Run make
         run: make
       - name: Commit the changes, if any
