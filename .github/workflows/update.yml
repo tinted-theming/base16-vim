@@ -1,7 +1,7 @@
 name: Update the repository with the latest base16 colorschemes
 on:
   schedule:
-    - cron: "0 0 * * 0" # https://crontab.guru/every-week
+    - cron: "* * * * *" # https://crontab.guru/every-minute
 jobs:
   run:
     runs-on: ubuntu-latest
