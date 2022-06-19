@@ -19,7 +19,12 @@ jobs:
       - name: Run make
         run: make
       - name: Commit the changes, if any
-        uses: stefanzweifel/git-auto-commit-action@v4.1.1
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Update repository with the latest base16 colorschemes
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          commit_message: Update with the latest base16-project colorschemes
           branch: ${{ github.head_ref }}
+          commit_user_name: base16-project-bot
+          commit_user_email: base16themeproject@proton.me
+          commit_author: base16-project-bot <base16themeproject@proton.me>
+
