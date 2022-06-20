@@ -2,7 +2,7 @@ name: Update with the latest base16 colorschemes
 on:
   workflow_dispatch:
   schedule:
-    - cron: "* * * * 0" # https://crontab.guru/every-week
+    - cron: "0 0 * * 0" # https://crontab.guru/every-week
 
 jobs:
   run:
