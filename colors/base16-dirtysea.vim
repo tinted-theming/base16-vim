@@ -35,18 +35,18 @@ let s:gui08        = "840000"
 let g:base16_gui08 = "840000"
 let s:gui09        = "006565"
 let g:base16_gui09 = "006565"
-let s:gui0A        = "755B00"
-let g:base16_gui0A = "755B00"
+let s:gui0A        = "755b00"
+let g:base16_gui0A = "755b00"
 let s:gui0B        = "730073"
 let g:base16_gui0B = "730073"
-let s:gui0C        = "755B00"
-let g:base16_gui0C = "755B00"
+let s:gui0C        = "755b00"
+let g:base16_gui0C = "755b00"
 let s:gui0D        = "007300"
 let g:base16_gui0D = "007300"
 let s:gui0E        = "000090"
 let g:base16_gui0E = "000090"
-let s:gui0F        = "755B00"
-let g:base16_gui0F = "755B00"
+let s:gui0F        = "755b00"
+let g:base16_gui0F = "755b00"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -102,18 +102,18 @@ if has("nvim")
   let g:terminal_color_0 =  "#e0e0e0"
   let g:terminal_color_1 =  "#840000"
   let g:terminal_color_2 =  "#730073"
-  let g:terminal_color_3 =  "#755B00"
+  let g:terminal_color_3 =  "#755b00"
   let g:terminal_color_4 =  "#007300"
   let g:terminal_color_5 =  "#000090"
-  let g:terminal_color_6 =  "#755B00"
+  let g:terminal_color_6 =  "#755b00"
   let g:terminal_color_7 =  "#000000"
   let g:terminal_color_8 =  "#707070"
   let g:terminal_color_9 =  "#840000"
   let g:terminal_color_10 = "#730073"
-  let g:terminal_color_11 = "#755B00"
+  let g:terminal_color_11 = "#755b00"
   let g:terminal_color_12 = "#007300"
   let g:terminal_color_13 = "#000090"
-  let g:terminal_color_14 = "#755B00"
+  let g:terminal_color_14 = "#755b00"
   let g:terminal_color_15 = "#c4d9c4"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
@@ -126,18 +126,18 @@ elseif has("terminal")
         \ "#e0e0e0",
         \ "#840000",
         \ "#730073",
-        \ "#755B00",
+        \ "#755b00",
         \ "#007300",
         \ "#000090",
-        \ "#755B00",
+        \ "#755b00",
         \ "#000000",
         \ "#707070",
         \ "#840000",
         \ "#730073",
-        \ "#755B00",
+        \ "#755b00",
         \ "#007300",
         \ "#000090",
-        \ "#755B00",
+        \ "#755b00",
         \ "#c4d9c4",
         \ ]
 endif

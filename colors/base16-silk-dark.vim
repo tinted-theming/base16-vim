@@ -17,20 +17,20 @@ endif
 " GUI color definitions
 let s:gui00        = "0e3c46"
 let g:base16_gui00 = "0e3c46"
-let s:gui01        = "1D494E"
-let g:base16_gui01 = "1D494E"
-let s:gui02        = "2A5054"
-let g:base16_gui02 = "2A5054"
+let s:gui01        = "1d494e"
+let g:base16_gui01 = "1d494e"
+let s:gui02        = "2a5054"
+let g:base16_gui02 = "2a5054"
 let s:gui03        = "587073"
 let g:base16_gui03 = "587073"
-let s:gui04        = "9DC8CD"
-let g:base16_gui04 = "9DC8CD"
-let s:gui05        = "C7DBDD"
-let g:base16_gui05 = "C7DBDD"
-let s:gui06        = "CBF2F7"
-let g:base16_gui06 = "CBF2F7"
-let s:gui07        = "D2FAFF"
-let g:base16_gui07 = "D2FAFF"
+let s:gui04        = "9dc8cd"
+let g:base16_gui04 = "9dc8cd"
+let s:gui05        = "c7dbdd"
+let g:base16_gui05 = "c7dbdd"
+let s:gui06        = "cbf2f7"
+let g:base16_gui06 = "cbf2f7"
+let s:gui07        = "d2faff"
+let g:base16_gui07 = "d2faff"
 let s:gui08        = "fb6953"
 let g:base16_gui08 = "fb6953"
 let s:gui09        = "fcab74"
@@ -106,7 +106,7 @@ if has("nvim")
   let g:terminal_color_4 =  "#46bddd"
   let g:terminal_color_5 =  "#756b8a"
   let g:terminal_color_6 =  "#3fb2b9"
-  let g:terminal_color_7 =  "#C7DBDD"
+  let g:terminal_color_7 =  "#c7dbdd"
   let g:terminal_color_8 =  "#587073"
   let g:terminal_color_9 =  "#fb6953"
   let g:terminal_color_10 = "#73d8ad"
@@ -114,7 +114,7 @@ if has("nvim")
   let g:terminal_color_12 = "#46bddd"
   let g:terminal_color_13 = "#756b8a"
   let g:terminal_color_14 = "#3fb2b9"
-  let g:terminal_color_15 = "#D2FAFF"
+  let g:terminal_color_15 = "#d2faff"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -130,7 +130,7 @@ elseif has("terminal")
         \ "#46bddd",
         \ "#756b8a",
         \ "#3fb2b9",
-        \ "#C7DBDD",
+        \ "#c7dbdd",
         \ "#587073",
         \ "#fb6953",
         \ "#73d8ad",
@@ -138,7 +138,7 @@ elseif has("terminal")
         \ "#46bddd",
         \ "#756b8a",
         \ "#3fb2b9",
-        \ "#D2FAFF",
+        \ "#d2faff",
         \ ]
 endif
 

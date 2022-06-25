@@ -21,8 +21,8 @@ let s:gui01        = "303030"
 let g:base16_gui01 = "303030"
 let s:gui02        = "353535"
 let g:base16_gui02 = "353535"
-let s:gui03        = "4A4A4A"
-let g:base16_gui03 = "4A4A4A"
+let s:gui03        = "4a4a4a"
+let g:base16_gui03 = "4a4a4a"
 let s:gui04        = "707070"
 let g:base16_gui04 = "707070"
 let s:gui05        = "cdcdcd"
@@ -107,7 +107,7 @@ if has("nvim")
   let g:terminal_color_5 =  "#9e6ffe"
   let g:terminal_color_6 =  "#708387"
   let g:terminal_color_7 =  "#cdcdcd"
-  let g:terminal_color_8 =  "#4A4A4A"
+  let g:terminal_color_8 =  "#4a4a4a"
   let g:terminal_color_9 =  "#f92672"
   let g:terminal_color_10 = "#a6e22e"
   let g:terminal_color_11 = "#e6db74"
@@ -131,7 +131,7 @@ elseif has("terminal")
         \ "#9e6ffe",
         \ "#708387",
         \ "#cdcdcd",
-        \ "#4A4A4A",
+        \ "#4a4a4a",
         \ "#f92672",
         \ "#a6e22e",
         \ "#e6db74",

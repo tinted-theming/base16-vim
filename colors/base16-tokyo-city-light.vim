@@ -15,38 +15,38 @@ if !has("gui_running")
 endif
 
 " GUI color definitions
-let s:gui00        = "FBFBFD"
-let g:base16_gui00 = "FBFBFD"
-let s:gui01        = "F6F6F8"
-let g:base16_gui01 = "F6F6F8"
-let s:gui02        = "EDEFF6"
-let g:base16_gui02 = "EDEFF6"
-let s:gui03        = "9699A3"
-let g:base16_gui03 = "9699A3"
+let s:gui00        = "fbfbfd"
+let g:base16_gui00 = "fbfbfd"
+let s:gui01        = "f6f6f8"
+let g:base16_gui01 = "f6f6f8"
+let s:gui02        = "edeff6"
+let g:base16_gui02 = "edeff6"
+let s:gui03        = "9699a3"
+let g:base16_gui03 = "9699a3"
 let s:gui04        = "4c505e"
 let g:base16_gui04 = "4c505e"
-let s:gui05        = "343B59"
-let g:base16_gui05 = "343B59"
-let s:gui06        = "1D252C"
-let g:base16_gui06 = "1D252C"
-let s:gui07        = "171D23"
-let g:base16_gui07 = "171D23"
-let s:gui08        = "8C4351"
-let g:base16_gui08 = "8C4351"
+let s:gui05        = "343b59"
+let g:base16_gui05 = "343b59"
+let s:gui06        = "1d252c"
+let g:base16_gui06 = "1d252c"
+let s:gui07        = "171d23"
+let g:base16_gui07 = "171d23"
+let s:gui08        = "8c4351"
+let g:base16_gui08 = "8c4351"
 let s:gui09        = "965027"
 let g:base16_gui09 = "965027"
-let s:gui0A        = "4C505E"
-let g:base16_gui0A = "4C505E"
-let s:gui0B        = "485E30"
-let g:base16_gui0B = "485E30"
-let s:gui0C        = "4C505E"
-let g:base16_gui0C = "4C505E"
+let s:gui0A        = "4c505e"
+let g:base16_gui0A = "4c505e"
+let s:gui0B        = "485e30"
+let g:base16_gui0B = "485e30"
+let s:gui0C        = "4c505e"
+let g:base16_gui0C = "4c505e"
 let s:gui0D        = "34548a"
 let g:base16_gui0D = "34548a"
-let s:gui0E        = "5A4A78"
-let g:base16_gui0E = "5A4A78"
-let s:gui0F        = "5A4A78"
-let g:base16_gui0F = "5A4A78"
+let s:gui0E        = "5a4a78"
+let g:base16_gui0E = "5a4a78"
+let s:gui0F        = "5a4a78"
+let g:base16_gui0F = "5a4a78"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -99,22 +99,22 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#FBFBFD"
-  let g:terminal_color_1 =  "#8C4351"
-  let g:terminal_color_2 =  "#485E30"
-  let g:terminal_color_3 =  "#4C505E"
+  let g:terminal_color_0 =  "#fbfbfd"
+  let g:terminal_color_1 =  "#8c4351"
+  let g:terminal_color_2 =  "#485e30"
+  let g:terminal_color_3 =  "#4c505e"
   let g:terminal_color_4 =  "#34548a"
-  let g:terminal_color_5 =  "#5A4A78"
-  let g:terminal_color_6 =  "#4C505E"
-  let g:terminal_color_7 =  "#343B59"
-  let g:terminal_color_8 =  "#9699A3"
-  let g:terminal_color_9 =  "#8C4351"
-  let g:terminal_color_10 = "#485E30"
-  let g:terminal_color_11 = "#4C505E"
+  let g:terminal_color_5 =  "#5a4a78"
+  let g:terminal_color_6 =  "#4c505e"
+  let g:terminal_color_7 =  "#343b59"
+  let g:terminal_color_8 =  "#9699a3"
+  let g:terminal_color_9 =  "#8c4351"
+  let g:terminal_color_10 = "#485e30"
+  let g:terminal_color_11 = "#4c505e"
   let g:terminal_color_12 = "#34548a"
-  let g:terminal_color_13 = "#5A4A78"
-  let g:terminal_color_14 = "#4C505E"
-  let g:terminal_color_15 = "#171D23"
+  let g:terminal_color_13 = "#5a4a78"
+  let g:terminal_color_14 = "#4c505e"
+  let g:terminal_color_15 = "#171d23"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -123,22 +123,22 @@ if has("nvim")
   endif
 elseif has("terminal")
   let g:terminal_ansi_colors = [
-        \ "#FBFBFD",
-        \ "#8C4351",
-        \ "#485E30",
-        \ "#4C505E",
+        \ "#fbfbfd",
+        \ "#8c4351",
+        \ "#485e30",
+        \ "#4c505e",
         \ "#34548a",
-        \ "#5A4A78",
-        \ "#4C505E",
-        \ "#343B59",
-        \ "#9699A3",
-        \ "#8C4351",
-        \ "#485E30",
-        \ "#4C505E",
+        \ "#5a4a78",
+        \ "#4c505e",
+        \ "#343b59",
+        \ "#9699a3",
+        \ "#8c4351",
+        \ "#485e30",
+        \ "#4c505e",
         \ "#34548a",
-        \ "#5A4A78",
-        \ "#4C505E",
-        \ "#171D23",
+        \ "#5a4a78",
+        \ "#4c505e",
+        \ "#171d23",
         \ ]
 endif
 

@@ -15,38 +15,38 @@ if !has("gui_running")
 endif
 
 " GUI color definitions
-let s:gui00        = "031A16"
-let g:base16_gui00 = "031A16"
-let s:gui01        = "0B342D"
-let g:base16_gui01 = "0B342D"
-let s:gui02        = "184E45"
-let g:base16_gui02 = "184E45"
-let s:gui03        = "2B685E"
-let g:base16_gui03 = "2B685E"
-let s:gui04        = "5F9C92"
-let g:base16_gui04 = "5F9C92"
-let s:gui05        = "81B5AC"
-let g:base16_gui05 = "81B5AC"
-let s:gui06        = "A7CEC8"
-let g:base16_gui06 = "A7CEC8"
-let s:gui07        = "D2E7E4"
-let g:base16_gui07 = "D2E7E4"
-let s:gui08        = "3E9688"
-let g:base16_gui08 = "3E9688"
-let s:gui09        = "3E7996"
-let g:base16_gui09 = "3E7996"
-let s:gui0A        = "3E4C96"
-let g:base16_gui0A = "3E4C96"
-let s:gui0B        = "883E96"
-let g:base16_gui0B = "883E96"
-let s:gui0C        = "963E4C"
-let g:base16_gui0C = "963E4C"
-let s:gui0D        = "96883E"
-let g:base16_gui0D = "96883E"
-let s:gui0E        = "4C963E"
-let g:base16_gui0E = "4C963E"
-let s:gui0F        = "3E965B"
-let g:base16_gui0F = "3E965B"
+let s:gui00        = "031a16"
+let g:base16_gui00 = "031a16"
+let s:gui01        = "0b342d"
+let g:base16_gui01 = "0b342d"
+let s:gui02        = "184e45"
+let g:base16_gui02 = "184e45"
+let s:gui03        = "2b685e"
+let g:base16_gui03 = "2b685e"
+let s:gui04        = "5f9c92"
+let g:base16_gui04 = "5f9c92"
+let s:gui05        = "81b5ac"
+let g:base16_gui05 = "81b5ac"
+let s:gui06        = "a7cec8"
+let g:base16_gui06 = "a7cec8"
+let s:gui07        = "d2e7e4"
+let g:base16_gui07 = "d2e7e4"
+let s:gui08        = "3e9688"
+let g:base16_gui08 = "3e9688"
+let s:gui09        = "3e7996"
+let g:base16_gui09 = "3e7996"
+let s:gui0A        = "3e4c96"
+let g:base16_gui0A = "3e4c96"
+let s:gui0B        = "883e96"
+let g:base16_gui0B = "883e96"
+let s:gui0C        = "963e4c"
+let g:base16_gui0C = "963e4c"
+let s:gui0D        = "96883e"
+let g:base16_gui0D = "96883e"
+let s:gui0E        = "4c963e"
+let g:base16_gui0E = "4c963e"
+let s:gui0F        = "3e965b"
+let g:base16_gui0F = "3e965b"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -99,22 +99,22 @@ endif
 
 " Neovim terminal colours
 if has("nvim")
-  let g:terminal_color_0 =  "#031A16"
-  let g:terminal_color_1 =  "#3E9688"
-  let g:terminal_color_2 =  "#883E96"
-  let g:terminal_color_3 =  "#3E4C96"
-  let g:terminal_color_4 =  "#96883E"
-  let g:terminal_color_5 =  "#4C963E"
-  let g:terminal_color_6 =  "#963E4C"
-  let g:terminal_color_7 =  "#81B5AC"
-  let g:terminal_color_8 =  "#2B685E"
-  let g:terminal_color_9 =  "#3E9688"
-  let g:terminal_color_10 = "#883E96"
-  let g:terminal_color_11 = "#3E4C96"
-  let g:terminal_color_12 = "#96883E"
-  let g:terminal_color_13 = "#4C963E"
-  let g:terminal_color_14 = "#963E4C"
-  let g:terminal_color_15 = "#D2E7E4"
+  let g:terminal_color_0 =  "#031a16"
+  let g:terminal_color_1 =  "#3e9688"
+  let g:terminal_color_2 =  "#883e96"
+  let g:terminal_color_3 =  "#3e4c96"
+  let g:terminal_color_4 =  "#96883e"
+  let g:terminal_color_5 =  "#4c963e"
+  let g:terminal_color_6 =  "#963e4c"
+  let g:terminal_color_7 =  "#81b5ac"
+  let g:terminal_color_8 =  "#2b685e"
+  let g:terminal_color_9 =  "#3e9688"
+  let g:terminal_color_10 = "#883e96"
+  let g:terminal_color_11 = "#3e4c96"
+  let g:terminal_color_12 = "#96883e"
+  let g:terminal_color_13 = "#4c963e"
+  let g:terminal_color_14 = "#963e4c"
+  let g:terminal_color_15 = "#d2e7e4"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -123,22 +123,22 @@ if has("nvim")
   endif
 elseif has("terminal")
   let g:terminal_ansi_colors = [
-        \ "#031A16",
-        \ "#3E9688",
-        \ "#883E96",
-        \ "#3E4C96",
-        \ "#96883E",
-        \ "#4C963E",
-        \ "#963E4C",
-        \ "#81B5AC",
-        \ "#2B685E",
-        \ "#3E9688",
-        \ "#883E96",
-        \ "#3E4C96",
-        \ "#96883E",
-        \ "#4C963E",
-        \ "#963E4C",
-        \ "#D2E7E4",
+        \ "#031a16",
+        \ "#3e9688",
+        \ "#883e96",
+        \ "#3e4c96",
+        \ "#96883e",
+        \ "#4c963e",
+        \ "#963e4c",
+        \ "#81b5ac",
+        \ "#2b685e",
+        \ "#3e9688",
+        \ "#883e96",
+        \ "#3e4c96",
+        \ "#96883e",
+        \ "#4c963e",
+        \ "#963e4c",
+        \ "#d2e7e4",
         \ ]
 endif
 

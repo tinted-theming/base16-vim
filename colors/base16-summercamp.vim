@@ -43,10 +43,10 @@ let s:gui0C        = "5aebbc"
 let g:base16_gui0C = "5aebbc"
 let s:gui0D        = "489bf0"
 let g:base16_gui0D = "489bf0"
-let s:gui0E        = "FF8080"
-let g:base16_gui0E = "FF8080"
-let s:gui0F        = "F69BE7"
-let g:base16_gui0F = "F69BE7"
+let s:gui0E        = "ff8080"
+let g:base16_gui0E = "ff8080"
+let s:gui0F        = "f69be7"
+let g:base16_gui0F = "f69be7"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -104,7 +104,7 @@ if has("nvim")
   let g:terminal_color_2 =  "#5ceb5a"
   let g:terminal_color_3 =  "#f2ff27"
   let g:terminal_color_4 =  "#489bf0"
-  let g:terminal_color_5 =  "#FF8080"
+  let g:terminal_color_5 =  "#ff8080"
   let g:terminal_color_6 =  "#5aebbc"
   let g:terminal_color_7 =  "#736e55"
   let g:terminal_color_8 =  "#504b38"
@@ -112,7 +112,7 @@ if has("nvim")
   let g:terminal_color_10 = "#5ceb5a"
   let g:terminal_color_11 = "#f2ff27"
   let g:terminal_color_12 = "#489bf0"
-  let g:terminal_color_13 = "#FF8080"
+  let g:terminal_color_13 = "#ff8080"
   let g:terminal_color_14 = "#5aebbc"
   let g:terminal_color_15 = "#f8f5de"
   let g:terminal_color_background = g:terminal_color_0
@@ -128,7 +128,7 @@ elseif has("terminal")
         \ "#5ceb5a",
         \ "#f2ff27",
         \ "#489bf0",
-        \ "#FF8080",
+        \ "#ff8080",
         \ "#5aebbc",
         \ "#736e55",
         \ "#504b38",
@@ -136,7 +136,7 @@ elseif has("terminal")
         \ "#5ceb5a",
         \ "#f2ff27",
         \ "#489bf0",
-        \ "#FF8080",
+        \ "#ff8080",
         \ "#5aebbc",
         \ "#f8f5de",
         \ ]

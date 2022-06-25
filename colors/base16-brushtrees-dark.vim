@@ -17,20 +17,20 @@ endif
 " GUI color definitions
 let s:gui00        = "485867"
 let g:base16_gui00 = "485867"
-let s:gui01        = "5A6D7A"
-let g:base16_gui01 = "5A6D7A"
-let s:gui02        = "6D828E"
-let g:base16_gui02 = "6D828E"
-let s:gui03        = "8299A1"
-let g:base16_gui03 = "8299A1"
-let s:gui04        = "98AFB5"
-let g:base16_gui04 = "98AFB5"
-let s:gui05        = "B0C5C8"
-let g:base16_gui05 = "B0C5C8"
-let s:gui06        = "C9DBDC"
-let g:base16_gui06 = "C9DBDC"
-let s:gui07        = "E3EFEF"
-let g:base16_gui07 = "E3EFEF"
+let s:gui01        = "5a6d7a"
+let g:base16_gui01 = "5a6d7a"
+let s:gui02        = "6d828e"
+let g:base16_gui02 = "6d828e"
+let s:gui03        = "8299a1"
+let g:base16_gui03 = "8299a1"
+let s:gui04        = "98afb5"
+let g:base16_gui04 = "98afb5"
+let s:gui05        = "b0c5c8"
+let g:base16_gui05 = "b0c5c8"
+let s:gui06        = "c9dbdc"
+let g:base16_gui06 = "c9dbdc"
+let s:gui07        = "e3efef"
+let g:base16_gui07 = "e3efef"
 let s:gui08        = "b38686"
 let g:base16_gui08 = "b38686"
 let s:gui09        = "d8bba2"
@@ -106,15 +106,15 @@ if has("nvim")
   let g:terminal_color_4 =  "#868cb3"
   let g:terminal_color_5 =  "#b386b2"
   let g:terminal_color_6 =  "#86b3b3"
-  let g:terminal_color_7 =  "#B0C5C8"
-  let g:terminal_color_8 =  "#8299A1"
+  let g:terminal_color_7 =  "#b0c5c8"
+  let g:terminal_color_8 =  "#8299a1"
   let g:terminal_color_9 =  "#b38686"
   let g:terminal_color_10 = "#87b386"
   let g:terminal_color_11 = "#aab386"
   let g:terminal_color_12 = "#868cb3"
   let g:terminal_color_13 = "#b386b2"
   let g:terminal_color_14 = "#86b3b3"
-  let g:terminal_color_15 = "#E3EFEF"
+  let g:terminal_color_15 = "#e3efef"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -130,15 +130,15 @@ elseif has("terminal")
         \ "#868cb3",
         \ "#b386b2",
         \ "#86b3b3",
-        \ "#B0C5C8",
-        \ "#8299A1",
+        \ "#b0c5c8",
+        \ "#8299a1",
         \ "#b38686",
         \ "#87b386",
         \ "#aab386",
         \ "#868cb3",
         \ "#b386b2",
         \ "#86b3b3",
-        \ "#E3EFEF",
+        \ "#e3efef",
         \ ]
 endif
 

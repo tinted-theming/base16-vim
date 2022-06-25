@@ -31,22 +31,22 @@ let s:gui06        = "282a2e"
 let g:base16_gui06 = "282a2e"
 let s:gui07        = "1d1f21"
 let g:base16_gui07 = "1d1f21"
-let s:gui08        = "CC342B"
-let g:base16_gui08 = "CC342B"
-let s:gui09        = "F96A38"
-let g:base16_gui09 = "F96A38"
-let s:gui0A        = "FBA922"
-let g:base16_gui0A = "FBA922"
+let s:gui08        = "cc342b"
+let g:base16_gui08 = "cc342b"
+let s:gui09        = "f96a38"
+let g:base16_gui09 = "f96a38"
+let s:gui0A        = "fba922"
+let g:base16_gui0A = "fba922"
 let s:gui0B        = "198844"
 let g:base16_gui0B = "198844"
-let s:gui0C        = "3971ED"
-let g:base16_gui0C = "3971ED"
-let s:gui0D        = "3971ED"
-let g:base16_gui0D = "3971ED"
-let s:gui0E        = "A36AC7"
-let g:base16_gui0E = "A36AC7"
-let s:gui0F        = "3971ED"
-let g:base16_gui0F = "3971ED"
+let s:gui0C        = "3971ed"
+let g:base16_gui0C = "3971ed"
+let s:gui0D        = "3971ed"
+let g:base16_gui0D = "3971ed"
+let s:gui0E        = "a36ac7"
+let g:base16_gui0E = "a36ac7"
+let s:gui0F        = "3971ed"
+let g:base16_gui0F = "3971ed"
 
 " Terminal color definitions
 let s:cterm00        = "00"
@@ -100,20 +100,20 @@ endif
 " Neovim terminal colours
 if has("nvim")
   let g:terminal_color_0 =  "#ffffff"
-  let g:terminal_color_1 =  "#CC342B"
+  let g:terminal_color_1 =  "#cc342b"
   let g:terminal_color_2 =  "#198844"
-  let g:terminal_color_3 =  "#FBA922"
-  let g:terminal_color_4 =  "#3971ED"
-  let g:terminal_color_5 =  "#A36AC7"
-  let g:terminal_color_6 =  "#3971ED"
+  let g:terminal_color_3 =  "#fba922"
+  let g:terminal_color_4 =  "#3971ed"
+  let g:terminal_color_5 =  "#a36ac7"
+  let g:terminal_color_6 =  "#3971ed"
   let g:terminal_color_7 =  "#373b41"
   let g:terminal_color_8 =  "#b4b7b4"
-  let g:terminal_color_9 =  "#CC342B"
+  let g:terminal_color_9 =  "#cc342b"
   let g:terminal_color_10 = "#198844"
-  let g:terminal_color_11 = "#FBA922"
-  let g:terminal_color_12 = "#3971ED"
-  let g:terminal_color_13 = "#A36AC7"
-  let g:terminal_color_14 = "#3971ED"
+  let g:terminal_color_11 = "#fba922"
+  let g:terminal_color_12 = "#3971ed"
+  let g:terminal_color_13 = "#a36ac7"
+  let g:terminal_color_14 = "#3971ed"
   let g:terminal_color_15 = "#1d1f21"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
@@ -124,20 +124,20 @@ if has("nvim")
 elseif has("terminal")
   let g:terminal_ansi_colors = [
         \ "#ffffff",
-        \ "#CC342B",
+        \ "#cc342b",
         \ "#198844",
-        \ "#FBA922",
-        \ "#3971ED",
-        \ "#A36AC7",
-        \ "#3971ED",
+        \ "#fba922",
+        \ "#3971ed",
+        \ "#a36ac7",
+        \ "#3971ed",
         \ "#373b41",
         \ "#b4b7b4",
-        \ "#CC342B",
+        \ "#cc342b",
         \ "#198844",
-        \ "#FBA922",
-        \ "#3971ED",
-        \ "#A36AC7",
-        \ "#3971ED",
+        \ "#fba922",
+        \ "#3971ed",
+        \ "#a36ac7",
+        \ "#3971ed",
         \ "#1d1f21",
         \ ]
 endif
