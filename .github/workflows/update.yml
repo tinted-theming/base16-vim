@@ -1,4 +1,4 @@
-name: Update with the latest base16 colorschemes
+name: Update with the latest base16-project/base16-schemes
 on:
   workflow_dispatch:
   schedule:
@@ -8,20 +8,18 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.8
-      - name: Upgrade pip
-        run: python -m pip install --upgrade pip
-      - name: Install pybase16
-        run: pip install pybase16-builder
       - name: Fetch the repository code
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
-      - name: Run make
-        run: make
+      - name: Fetch the schemes repository
+        uses: actions/checkout@v3
+        with:
+          repository: base16-project/base16-schemes
+          path: schemes
+          token: ${{ secrets.BOT_ACCESS_TOKEN }}
+      - name: Update schemes
+        uses: base16-project/base16-builder-go@latest
       - name: Commit the changes, if any
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -30,4 +28,3 @@ jobs:
           commit_user_name: base16-project-bot
           commit_user_email: base16themeproject@proton.me
           commit_author: base16-project-bot <base16themeproject@proton.me>
-

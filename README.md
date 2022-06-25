@@ -1,26 +1,29 @@
 # Base16 Vim
 
-This theme was built with [base16-builder-python](https://github.com/InspectorMustache/base16-builder-python).
+Supports console [Vim][1], graphical Vim and [Neovim][2].
 
 Supports graphical Vim and console Vim.
 
-Over [70 themes](https://github.com/base16-project/base16-schemes) plus light/dark variations are available. Here are some of our favorites:
+Over [200 themes][3] plus light/dark variations are available. Here are
+some of our favorites:
 
 The `classic-dark` theme:
 
-![base16-vim classic-dark](/screenshots/base16-vim-screenshot-classic-dark.png)
+![base16-vim classic-dark][10]
 
 The `horizon-dark` theme:
 
-![base16-vim horizon-dark](/screenshots/base16-vim-screenshot-horizon-dark.png)
+![base16-vim horizon-dark][11]
 
 The `onedark` theme:
 
-![base16-vim onedark](/screenshots/base16-vim-screenshot-onedark.png)
+![base16-vim onedark][12]
 
 ## Terminal Themes
 
-For terminal Vim (non-gui) please ensure you are using a base16 terminal theme. Have a look at the list of [official](https://github.com/base16-project/base16#official-templates) and [unofficial](https://github.com/base16-project/base16#unofficial-templates) themes for your terminal of choice.
+For terminal Vim (non-gui) please ensure you are using a base16 terminal
+theme. Have a look at the list of [official][4] and [unofficial][5]
+themes for your terminal of choice.
 
 ## Installation
 
@@ -67,20 +70,27 @@ cp base16/colors/*.vim .
 
 ## 256 colorspace
 
-If using a Base16 terminal theme designed to keep the 16 ANSI colors intact (a "256" variation) **and** have sucessfully modified your 256 colorspace with [base16-shell](https://github.com/base16-project/base16-shell) you'll need to add the following to your `~/.vimrc` **before** the colorsheme declaration.
+If using a Base16 terminal theme designed to keep the 16 ANSI colors
+intact (a "256" variation) **and** have sucessfully modified your 256
+colorspace with [base16-shell][6] you'll need to add the following to
+your `~/.vimrc` **before** the colorsheme declaration.
 
-    let base16colorspace=256  " Access colors present in 256 colorspace
+```vim
+let base16colorspace=256  " Access colors present in 256 colorspace
+```
 
-This will cause vim to access the colours in the modified 256 colorspace. Please **do not** enable this simply because you have a 256 color terminal as this will cause colors to be displayed incorrectly.
+This will cause vim to access the colours in the modified 256
+colorspace. Please **do not** enable this simply because you have a 256
+color terminal as this will cause colors to be displayed incorrectly.
 
 ## Troubleshooting
 
-There is a script to help troubleshoot colour issues called `colortest` available in the [Base16 Shell](https://github.com/base16-project/base16-shell) repository.
+There is a script to help troubleshoot colour issues called `colortest`
+available in the [Base16 Shell][6] repository.
 
-If you are using a ISO-8613-3 compatible terminal (
-[vim docs](https://github.com/vim/vim/blob/23c1b2b018c8121ca5fcc247e37966428bf8ca66/runtime/doc/options.txt#L7876),
-[neovim docs](https://neovim.io/doc/user/options.html#'termguicolors')), and
-you see a green or blue line, try to enable `termguicolors`:
+If you are using a ISO-8613-3 compatible terminal ([vim docs][7],
+[neovim docs][8]), and you see a green or blue line, try to enable
+`termguicolors`:
 
 ```vim
 set termguicolors
@@ -88,19 +98,28 @@ set termguicolors
 
 ### Green line numbers
 
-![green line numbers screenshot](/screenshots/without-base16colorspace-256-with-256-terminal-theme.png)
+![green line numbers screenshot][13]
 
-If your Vim looks like the above image you are using a 256 terminal theme without setting `let base16colorspace=256` in your `~/.vimrc`. Either set `let base16colorspace=256` in your `~/.vimrc` or use a non 256 terminal theme.
+If your Vim looks like the above image you are using a 256 terminal
+theme without setting `let base16colorspace=256` in your `~/.vimrc`.
+Either set `let base16colorspace=256` in your `~/.vimrc` or use a non
+256 terminal theme.
 
 ### Blue line numbers
 
-![blue line numbers screenshot](/screenshots/with-base16colorspace-256-without-base16-shell.png)
+![blue line numbers screenshot][14]
 
-If your Vim looks like the above image you are setting `let base16colorspace=256` in your `~/.vimrc` but either not running [Base16 Shell](https://github.com/base16-project/base16-shell) or [Base16 Shell](https://github.com/base16-project/base16-shell) is not working for your terminal. Either ensure [Base16 Shell](https://github.com/base16-project/base16-shell) is working by running the `colortest` available in the [Base16 Shell](https://github.com/base16-project/base16-shell) repository or not setting `let base16colorspace=256` in your `~/.vimrc`.
+If your Vim looks like the above image you are setting `let
+base16colorspace=256` in your `~/.vimrc` but either not running [Base16
+Shell][6] or [Base16 Shell][6] is not working for your terminal. Either
+ensure [Base16 Shell][6] is working by running the `colortest` available
+in the [Base16 Shell][6] repository or not setting `let
+base16colorspace=256` in your `~/.vimrc`.
 
 ## Customization
 
-If you want to do some local customization, you can add something like this to your `~/.vimrc`:
+If you want to do some local customization, you can add something like
+this to your `~/.vimrc`:
 
 ```vim
 function! s:base16_customize() abort
@@ -115,5 +134,20 @@ augroup END
 
 ## Contributing
 
-See [`CONTRIBUTING.md`](/CONTRIBUTING.md), which contains building and
-contributing instructions.
+See [`CONTRIBUTING.md`][9], which contains building and contributing
+instructions.
+
+[1]: https://github.com/vim/vim
+[2]: https://github.com/neovim/neovim
+[3]: https://github.com/base16-project/base16-schemes
+[4]: https://github.com/base16-project/base16#official-templates
+[5]: https://github.com/base16-project/base16#unofficial-templates
+[6]: https://github.com/base16-project/base16-shell
+[7]: https://github.com/vim/vim/blob/23c1b2b018c8121ca5fcc247e37966428bf8ca66/runtime/doc/options.txt#L7876
+[8]: https://neovim.io/doc/user/options.html#'termguicolors'
+[9]: CONTRIBUTING.md
+[10]: screenshots/base16-vim-screenshot-classic-dark.png
+[11]: screenshots/base16-vim-screenshot-horizon-dark.png
+[12]: screenshots/base16-vim-screenshot-onedark.png
+[13]: screenshots/without-base16colorspace-256-with-256-terminal-theme.png
+[14]: screenshots/with-base16colorspace-256-without-base16-shell.png
