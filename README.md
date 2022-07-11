@@ -140,8 +140,8 @@ instructions.
 [1]: https://github.com/vim/vim
 [2]: https://github.com/neovim/neovim
 [3]: https://github.com/base16-project/base16-schemes
-[4]: https://github.com/base16-project/base16#official-templates
-[5]: https://github.com/base16-project/base16#unofficial-templates
+[4]: https://github.com/base16-project/home#official-templates
+[5]: https://github.com/base16-project/home#unofficial-templates
 [6]: https://github.com/base16-project/base16-shell
 [7]: https://github.com/vim/vim/blob/23c1b2b018c8121ca5fcc247e37966428bf8ca66/runtime/doc/options.txt#L7876
 [8]: https://neovim.io/doc/user/options.html#'termguicolors'
