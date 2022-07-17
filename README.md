@@ -2,8 +2,6 @@
 
 Supports console [Vim][1], graphical Vim and [Neovim][2].
 
-Supports graphical Vim and console Vim.
-
 Over [200 themes][3] plus light/dark variations are available. Here are
 some of our favorites:
 
