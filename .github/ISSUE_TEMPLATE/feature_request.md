@@ -4,7 +4,7 @@ about: Suggest an idea for this project
 title: "[Feature request] "
 labels: ["feature"]
 assignees: 
-  - base16-project/vim
+  - tinted-theming/vim
 ---
 
 ## Is your feature request related to a problem? Please describe.

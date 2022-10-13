@@ -57,10 +57,10 @@ Please follow the instructions in the issue templates:
 - [Issue template for bug reports]
 - [Issue template for feature requests]
 
-[base16-builder-go]: https://github.com/base16-project/base16-builder-go
-[base16-schemes]: https://github.com/base16-project/base16-schemes
+[base16-builder-go]: https://github.com/tinted-theming/base16-builder-go
+[base16-schemes]: https://github.com/tinted-theming/base16-schemes
 [GitHub Action]: .github/workflows/update.yml
-[latest base16-builder-go binary]: https://github.com/base16-project/base16-builder-go/releases
+[latest base16-builder-go binary]: https://github.com/tinted-theming/base16-builder-go/releases
 [PR template]: .github/pull_request_template.md
 [Issue template for bug reports]: .github/ISSUE_TEMPLATE/bug_report.md
 [Issue template for feature requests]: .github/ISSUE_TEMPLATE/feature_request.md

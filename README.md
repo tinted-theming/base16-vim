@@ -32,7 +32,7 @@ Add `colorscheme base16-default-dark` to your `~/.vimrc`.
 Add the following to your `~/.vimrc` file and run `PluginInstall` in Vim.
 
 ```vim
-Plugin 'base16-project/base16-vim'
+Plugin 'tinted-theming/base16-vim'
 ```
 
 ### vim-plug
@@ -40,21 +40,21 @@ Plugin 'base16-project/base16-vim'
 Add the following to your `~/.vimrc` file and run `PlugInstall` in Vim.
 
 ```vim
-Plug 'base16-project/base16-vim'
+Plug 'tinted-theming/base16-vim'
 ```
 
 ### Pathogen
 
 ```bash
 cd ~/.vim/bundle
-git clone https://github.com/base16-project/base16-vim.git
+git clone https://github.com/tinted-theming/base16-vim.git
 ```
 
 ### Manual
 
 ```bash
 cd ~/.vim/colors
-git clone git://github.com/base16-project/base16-vim.git base16
+git clone git://github.com/tinted-theming/base16-vim.git base16
 cp base16/colors/*.vim .
 ```
 
@@ -62,7 +62,7 @@ cp base16/colors/*.vim .
 
 ```bash
 cd ~/.config/nvim/colors
-git clone git://github.com/base16-project/base16-vim.git base16
+git clone git://github.com/tinted-theming/base16-vim.git base16
 cp base16/colors/*.vim .
 ```
 
@@ -137,10 +137,10 @@ instructions.
 
 [1]: https://github.com/vim/vim
 [2]: https://github.com/neovim/neovim
-[3]: https://github.com/base16-project/base16-schemes
-[4]: https://github.com/base16-project/home#official-templates
-[5]: https://github.com/base16-project/home#unofficial-templates
-[6]: https://github.com/base16-project/base16-shell
+[3]: https://github.com/tinted-theming/base16-schemes
+[4]: https://github.com/tinted-theming/home#official-templates
+[5]: https://github.com/tinted-theming/home#unofficial-templates
+[6]: https://github.com/tinted-theming/base16-shell
 [7]: https://github.com/vim/vim/blob/23c1b2b018c8121ca5fcc247e37966428bf8ca66/runtime/doc/options.txt#L7876
 [8]: https://neovim.io/doc/user/options.html#'termguicolors'
 [9]: CONTRIBUTING.md
