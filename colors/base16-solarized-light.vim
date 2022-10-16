@@ -1,8 +1,9 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/chriskempson/base16-vim)
-" by Chris Kempson (http://chriskempson.com)
-" Solarized Light scheme by Ethan Schoonover (modified by aramisgithub)
+" base16-vim (https://github.com/tinted-theming/base16-vim)
+" Scheme name: Solarized Light
+" Scheme author: Ethan Schoonover (modified by aramisgithub)
+" Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts

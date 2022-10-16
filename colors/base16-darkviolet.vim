@@ -1,8 +1,9 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/chriskempson/base16-vim)
-" by Chris Kempson (http://chriskempson.com)
-" Dark Violet scheme by ruler501 (https://github.com/ruler501/base16-darkviolet)
+" base16-vim (https://github.com/tinted-theming/base16-vim)
+" Scheme name: Dark Violet
+" Scheme author: ruler501 (https://github.com/ruler501/base16-darkviolet)
+" Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts

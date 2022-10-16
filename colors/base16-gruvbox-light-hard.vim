@@ -1,8 +1,9 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/chriskempson/base16-vim)
-" by Chris Kempson (http://chriskempson.com)
-" Gruvbox light, hard scheme by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+" base16-vim (https://github.com/tinted-theming/base16-vim)
+" Scheme name: Gruvbox light, hard
+" Scheme author: Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+" Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts

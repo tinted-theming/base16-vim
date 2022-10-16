@@ -1,8 +1,9 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/chriskempson/base16-vim)
-" by Chris Kempson (http://chriskempson.com)
-" 3024 scheme by Jan T. Sott (http://github.com/idleberg)
+" base16-vim (https://github.com/tinted-theming/base16-vim)
+" Scheme name: 3024
+" Scheme author: Jan T. Sott (http://github.com/idleberg)
+" Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts

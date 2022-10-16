@@ -1,8 +1,9 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/chriskempson/base16-vim)
-" by Chris Kempson (http://chriskempson.com)
-" Google Light scheme by Seth Wright (http://sethawright.com)
+" base16-vim (https://github.com/tinted-theming/base16-vim)
+" Scheme name: Google Light
+" Scheme author: Seth Wright (http://sethawright.com)
+" Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts

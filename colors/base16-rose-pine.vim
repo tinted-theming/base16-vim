@@ -1,8 +1,9 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/chriskempson/base16-vim)
-" by Chris Kempson (http://chriskempson.com)
-" Rosé Pine scheme by Emilia Dunfelt &lt;sayhi@dunfelt.se&gt;
+" base16-vim (https://github.com/tinted-theming/base16-vim)
+" Scheme name: Rosé Pine
+" Scheme author: Emilia Dunfelt &lt;sayhi@dunfelt.se&gt;
+" Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts

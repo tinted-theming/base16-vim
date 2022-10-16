@@ -1,8 +1,9 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/chriskempson/base16-vim)
-" by Chris Kempson (http://chriskempson.com)
-" Nova scheme by George Essig (https://github.com/gessig), Trevor D. Miller (https://trevordmiller.com)
+" base16-vim (https://github.com/tinted-theming/base16-vim)
+" Scheme name: Nova
+" Scheme author: George Essig (https://github.com/gessig), Trevor D. Miller (https://trevordmiller.com)
+" Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts

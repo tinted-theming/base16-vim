@@ -1,8 +1,9 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/chriskempson/base16-vim)
-" by Chris Kempson (http://chriskempson.com)
-" Horizon Dark scheme by Michaël Ball (http://github.com/michael-ball/)
+" base16-vim (https://github.com/tinted-theming/base16-vim)
+" Scheme name: Horizon Dark
+" Scheme author: Michaël Ball (http://github.com/michael-ball/)
+" Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
 " :colorscheme works in terminals supported by base16-shell scripts
