@@ -405,34 +405,34 @@ call <sid>hi("cssClassName",   s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("cssColor",       s:gui0C, "", s:cterm0C, "", "", "")
 
 " CMP
-hi! link CmpItemAbbrDeprecated  Deprecated 
+hi! link CmpItemAbbrDeprecated  Deprecated
 hi! link CmpItemAbbrMatch       SearchMatch
 hi! link CmpItemAbbrMatchFuzzy  SearchMatch
-hi! link CmpItemKindText TSText
-hi! link CmpItemKindMethod TSMethod
-hi! link CmpItemKindFunction TSFunction
-hi! link CmpItemKindConstructor TSConstructor
-hi! link CmpItemKindField TSField
-hi! link CmpItemKindVariable TSVariable
-" hi! link CmpItemKindClass TS
-hi! link CmpItemKindInterface TSText
-" hi! link CmpItemKindModule TS
-hi! link CmpItemKindProperty TSProperty
-hi! link CmpItemKindUnit TSKeyword
-" hi! link CmpItemKindValue TS
-" hi! link CmpItemKindEnum TS
-hi! link CmpItemKindKeyword TSKeyword
-" hi! link CmpItemKindSnippet TS
-" hi! link CmpItemKindColor TS
-" hi! link CmpItemKindFile TS
-" hi! link CmpItemKindReference TS
-" hi! link CmpItemKindFolder TS
-" hi! link CmpItemKindEnumMember TS
-hi! link CmpItemKindConstant TSConstant
-" hi! link CmpItemKindStruct TS
-" hi! link CmpItemKindEvent TS
-hi! link CmpItemKindOperator TSOperator
-hi! link CmpItemKindTypeParameter TSType
+hi! link CmpItemKindText @text
+hi! link CmpItemKindMethod @method
+hi! link CmpItemKindFunction @function
+hi! link CmpItemKindConstructor @constructor
+hi! link CmpItemKindField @field
+hi! link CmpItemKindVariable @variable
+" hi! link CmpItemKindClass @
+hi! link CmpItemKindInterface @text
+" hi! link CmpItemKindModule @
+hi! link CmpItemKindProperty @property
+hi! link CmpItemKindUnit @keyword
+" hi! link CmpItemKindValue @
+" hi! link CmpItemKindEnum @
+hi! link CmpItemKindKeyword @keyword
+" hi! link CmpItemKindSnippet @
+" hi! link CmpItemKindColor @
+" hi! link CmpItemKindFile @
+" hi! link CmpItemKindReference @
+" hi! link CmpItemKindFolder @
+" hi! link CmpItemKindEnumMember @
+hi! link CmpItemKindConstant @constant
+" hi! link CmpItemKindStruct @
+" hi! link CmpItemKindEvent @
+hi! link CmpItemKindOperator @operator
+hi! link CmpItemKindTypeParameter @type
 
 " Diff
 call <sid>hi("DiffAdd",      s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "", "")
@@ -464,7 +464,7 @@ call <sid>hi("gitcommitSelectedFile",   s:gui0B, "", s:cterm0B, "", "bold", "")
 
 " GitGutter
 hi! link GitGutterAdd            GitAddSign
-hi! link GitGutterChange         GitChangeSign  
+hi! link GitGutterChange         GitChangeSign
 hi! link GitGutterDelete         GitDeleteSign
 hi! link GitGutterChangeDelete   GitChangeDeleteSign
 
@@ -561,9 +561,6 @@ call <sid>hi("StartifySection",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("StartifySelect",   s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("StartifySlash",    s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("StartifySpecial",  s:gui03, "", s:cterm03, "", "", "")
-
-" Treesitter
-hi! link TSVariable Identifier
 
 " Treesitter-refactor
 if has("nvim")
