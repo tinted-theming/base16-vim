@@ -206,7 +206,7 @@ call <sid>hi("FoldColumn",    s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
 call <sid>hi("Folded",        s:gui02, s:gui00, s:cterm02, s:cterm00, "", "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none", "")
 call <sid>hi("Italic",        "", "", "", "", "italic", "")
-call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "", "")
+call <sid>hi("Macro",         s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("MatchParen",    "", s:gui03, "", s:cterm03,  "", "")
 call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("MoreMsg",       s:gui0B, "", s:cterm0B, "", "", "")
@@ -215,7 +215,7 @@ call <sid>hi("Search",        s:gui01, s:gui0A, s:cterm01, s:cterm0A,  "", "")
 call <sid>hi("Substitute",    s:gui01, s:gui0A, s:cterm01, s:cterm0A, "none", "")
 call <sid>hi("SpecialKey",    s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("TooLong",       s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("Underlined",    s:gui08, "", s:cterm08, "", "", "")
+call <sid>hi("Underlined",    "", "", "", "", "underline", "fg")
 call <sid>hi("Visual",        "", s:gui02, "", s:cterm02, "", "")
 call <sid>hi("VisualNOS",     s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "", "")
@@ -246,31 +246,42 @@ call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", ""
 " Standard syntax
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Character",    s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "italic", "")
 call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none", "")
 call <sid>hi("Delimiter",    s:gui05, "", s:cterm05, "", "", "")
+call <sid>hi("Deprecated",   "", "", "", "", "strikethrough", "")
 call <sid>hi("Float",        s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Function",     s:gui0D, "", s:cterm0D, "", "", "")
-call <sid>hi("Identifier",   s:gui08, "", s:cterm08, "", "none", "")
+call <sid>hi("Identifier",   s:gui05, "", s:cterm05, "", "none", "")
 call <sid>hi("Include",      s:gui0D, "", s:cterm0D, "", "", "")
-call <sid>hi("Keyword",      s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("Keyword",      s:gui0E, "", s:cterm0E, "", "none", "")
 call <sid>hi("Label",        s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("Number",       s:gui09, "", s:cterm09, "", "", "")
-call <sid>hi("Operator",     s:gui05, "", s:cterm05, "", "none", "")
+call <sid>hi("Operator",     s:gui0C, "", s:cterm0C, "", "none", "")
 call <sid>hi("PreProc",      s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("Repeat",       s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Special",      s:gui0C, "", s:cterm0C, "", "", "")
-call <sid>hi("SpecialChar",  s:gui0C, "", s:cterm0C, "", "", "")
+call <sid>hi("SpecialChar",  s:gui0F, "", s:cterm0F, "", "", "")
 call <sid>hi("Statement",    s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("StorageClass", s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("String",       s:gui0B, "", s:cterm0B, "", "", "")
-call <sid>hi("Structure",    s:gui0E, "", s:cterm0E, "", "", "")
+call <sid>hi("Structure",    s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("Tag",          s:gui0A, "", s:cterm0A, "", "", "")
-call <sid>hi("Todo",         s:gui0A, s:gui01, s:cterm0A, s:cterm01, "", "")
+call <sid>hi("Todo",         s:gui08, s:gui00, s:cterm08, s:cterm00, "italic", "")
 call <sid>hi("Type",         s:gui0A, "", s:cterm0A, "", "none", "")
 call <sid>hi("Typedef",      s:gui0A, "", s:cterm0A, "", "", "")
+
+" Treesitter
+if has("nvim-0.8.0")
+  call <sid>hi("@field",            s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("@property",            s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("@namespace",        s:gui05, "", s:cterm05, "", "italic", "")
+  call <sid>hi("@variable.builtin", s:gui05, "", s:cterm05, "", "italic", "")
+  call <sid>hi("@text.reference",   s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("@text.uri",         s:gui08, "", s:cterm08, "", "italic", "")
+endif
 
 " Standard highlights to be used by plugins
 call <sid>hi("Deprecated",   "", "", "", "", "strikethrough", "")
@@ -285,16 +296,19 @@ call <sid>hi("ErrorSign",    s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("WarningSign",  s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("InfoSign",     s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("HintSign",     s:gui0C, "", s:cterm0C, "", "", "")
+call <sid>hi("OkSign",       s:gui0B, "", s:cterm0B, "", "", "")
 
 call <sid>hi("ErrorFloat",   s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
 call <sid>hi("WarningFloat", s:gui09, s:gui01, s:cterm09, s:cterm01, "", "")
 call <sid>hi("InfoFloat",    s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
 call <sid>hi("HintFloat",    s:gui0C, s:gui01, s:cterm0C, s:cterm01, "", "")
+call <sid>hi("OkFloat",      s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
 
 call <sid>hi("ErrorHighlight",   "", "", s:cterm00, s:cterm08, "underline", s:gui08)
 call <sid>hi("WarningHighlight", "", "", s:cterm00, s:cterm09, "underline", s:gui09)
 call <sid>hi("InfoHighlight",    "", "", s:cterm00, s:cterm0D, "underline", s:gui0D)
 call <sid>hi("HintHighlight",    "", "", s:cterm00, s:cterm0C, "underline", s:gui0C)
+call <sid>hi("OkHighlight",      "", "", s:cterm00, s:cterm0B, "underline", s:gui0B)
 
 call <sid>hi("SpellBad",     "", "", s:cterm00, s:cterm08, "undercurl", s:gui08)
 call <sid>hi("SpellLocal",   "", "", s:cterm00, s:cterm0C, "undercurl", s:gui0C)
@@ -408,31 +422,35 @@ call <sid>hi("cssColor",       s:gui0C, "", s:cterm0C, "", "", "")
 hi! link CmpItemAbbrDeprecated  Deprecated
 hi! link CmpItemAbbrMatch       SearchMatch
 hi! link CmpItemAbbrMatchFuzzy  SearchMatch
-hi! link CmpItemKindText @text
-hi! link CmpItemKindMethod @method
-hi! link CmpItemKindFunction @function
-hi! link CmpItemKindConstructor @constructor
-hi! link CmpItemKindField @field
-hi! link CmpItemKindVariable @variable
-" hi! link CmpItemKindClass @
-hi! link CmpItemKindInterface @text
-" hi! link CmpItemKindModule @
-hi! link CmpItemKindProperty @property
-hi! link CmpItemKindUnit @keyword
-" hi! link CmpItemKindValue @
-" hi! link CmpItemKindEnum @
-hi! link CmpItemKindKeyword @keyword
-" hi! link CmpItemKindSnippet @
-" hi! link CmpItemKindColor @
-" hi! link CmpItemKindFile @
-" hi! link CmpItemKindReference @
-" hi! link CmpItemKindFolder @
-" hi! link CmpItemKindEnumMember @
-hi! link CmpItemKindConstant @constant
-" hi! link CmpItemKindStruct @
-" hi! link CmpItemKindEvent @
-hi! link CmpItemKindOperator @operator
-hi! link CmpItemKindTypeParameter @type
+hi! link CmpItemKindClass Type
+hi! link CmpItemKindColor Keyword
+hi! link CmpItemKindConstant Constant
+hi! link CmpItemKindConstructor Special
+hi! link CmpItemKindEnum Type
+hi! link CmpItemKindEnumMember Constant
+hi! link CmpItemKindEvent Identifier
+hi! link CmpItemKindField Character
+hi! link CmpItemKindFile Directory
+hi! link CmpItemKindFolder Directory
+hi! link CmpItemKindFunction Function
+hi! link CmpItemKindInterface Type
+hi! link CmpItemKindKeyword Keyword
+hi! link CmpItemKindMethod Function
+hi! link CmpItemKindModule Namespace
+hi! link CmpItemKindOperator Operator
+hi! link CmpItemKindProperty Identifier
+hi! link CmpItemKindReference Character
+hi! link CmpItemKindSnippet String
+hi! link CmpItemKindStruct Type
+hi! link CmpItemKindText Text
+hi! link CmpItemKindUnit Namespace
+hi! link CmpItemKindValue Comment
+hi! link CmpItemKindVariable Identifier
+
+if has("nvim-0.8.0")
+  hi! link CmpItemKindField @field
+  hi! link CmpItemKindProperty @property
+endif
 
 " Diff
 call <sid>hi("DiffAdd",      s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "", "")
@@ -562,33 +580,31 @@ call <sid>hi("StartifySelect",   s:gui0C, "", s:cterm0C, "", "", "")
 call <sid>hi("StartifySlash",    s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("StartifySpecial",  s:gui03, "", s:cterm03, "", "", "")
 
-" Treesitter-refactor
-if has("nvim")
-  call <sid>hi("TSDefinition",       "", s:gui03, "", s:cterm03, "", "")
-  call <sid>hi("TSDefinitionUsage",  "", s:gui02, "", s:cterm02, "none", "")
-endif
-
 " LSP
 if has("nvim")
   hi! link DiagnosticError  ErrorSign
   hi! link DiagnosticWarn   WarningSign
   hi! link DiagnosticInfo   InfoSign
   hi! link DiagnosticHint   HintSign
+  hi! link DiagnosticOk     OkSign
 
   hi! link DiagnosticFloatingError  ErrorFloat
   hi! link DiagnosticFloatingWarn   WarningFloat
   hi! link DiagnosticFloatingInfo   InfoFloat
   hi! link DiagnosticFloatingHint   HintFloat
+  hi! link DiagnosticFloatingOk     OkFloat
 
   hi! link DiagnosticUnderlineError  ErrorHighlight
   hi! link DiagnosticUnderlineWarn   WarningHighlight
   hi! link DiagnosticUnderlineInfo   InfoHighlight
   hi! link DiagnosticUnderlineHint   HintHighlight
+  hi! link DiagnosticUnderlineOk     OkHighlight
 
   hi! link DiagnosticsVirtualTextError    ErrorSign
   hi! link DiagnosticsVirtualTextWarning  WarningSign
   hi! link DiagnosticsVirtualTextInfo     InfoSign
   hi! link DiagnosticsVirtualTextHint     HintSign
+  hi! link DiagnosticsVirtualTextOk       OkSign
 
   " Remove untill endif on next nvim release
   hi! link LspDiagnosticsSignError    ErrorSign
