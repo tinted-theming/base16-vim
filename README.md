@@ -70,16 +70,52 @@ cp base16/colors/*.vim .
 
 If using a Base16 terminal theme designed to keep the 16 ANSI colors
 intact (a "256" variation) **and** have sucessfully modified your 256
-colorspace with [base16-shell][6] you'll need to add the following to
-your `~/.vimrc` **before** the colorsheme declaration.
+colorspace with [base16-shell][6].This will cause vim to access the
+colours in the modified 256 colorspace. Please **do not** enable this
+simply because you have a 256 color terminal as this will cause colors
+to be displayed incorrectly.
+
+you'll need to add the following to your `~/.vimrc` **before** the
+colorsheme declaration.
+
+### Vim
 
 ```vim
-let base16colorspace=256  " Access colors present in 256 colorspace
+let base16_colorspace=256 " Access colors present in 256 colorspace
 ```
 
-This will cause vim to access the colours in the modified 256
-colorspace. Please **do not** enable this simply because you have a 256
-color terminal as this will cause colors to be displayed incorrectly.
+### Neovim (lua)
+
+```lua
+-- Access colors present in 256 colorspace
+vim.g.base16_colorspace = 256
+```
+
+
+## Background transparency
+
+If you're using a terminal with an opacity of `< 1`, you'll notice that
+base16-vim doesn't respect this transparency by default. You can enable
+transparent backgrounds with base16-vim by adding the following settings
+to your vim/neovim setup.
+
+### Vim
+
+Add the following variable to your `~/.vimrc` before your colorscheme
+declaration.
+
+```vim
+let base16_background_transparent=1 " Make vim background transparent to work alongside transparent terminal backgrounds
+```
+
+### Neovim (lua)
+
+Add the following to your lua setup before your colorscheme declaration.
+
+```lua
+-- Make vim background transparent to work alongside transparent terminal backgrounds
+vim.g.base16_background_transparent = 1
+```
 
 ## Troubleshooting
 
@@ -99,8 +135,8 @@ set termguicolors
 ![green line numbers screenshot][13]
 
 If your Vim looks like the above image you are using a 256 terminal
-theme without setting `let base16colorspace=256` in your `~/.vimrc`.
-Either set `let base16colorspace=256` in your `~/.vimrc` or use a non
+theme without setting `let base16_colorspace=256` in your `~/.vimrc`.
+Either set `let base16_colorspace=256` in your `~/.vimrc` or use a non
 256 terminal theme.
 
 ### Blue line numbers
@@ -108,11 +144,11 @@ Either set `let base16colorspace=256` in your `~/.vimrc` or use a non
 ![blue line numbers screenshot][14]
 
 If your Vim looks like the above image you are setting `let
-base16colorspace=256` in your `~/.vimrc` but either not running [Base16
+base16_colorspace=256` in your `~/.vimrc` but either not running [Base16
 Shell][6] or [Base16 Shell][6] is not working for your terminal. Either
 ensure [Base16 Shell][6] is working by running the `colortest` available
 in the [Base16 Shell][6] repository or not setting `let
-base16colorspace=256` in your `~/.vimrc`.
+base16_colorspace=256` in your `~/.vimrc`.
 
 ## Customization
 

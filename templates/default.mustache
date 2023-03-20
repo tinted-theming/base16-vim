@@ -70,7 +70,10 @@ let s:cterm0D        = "04"
 let g:base16_cterm0D = "04"
 let s:cterm0E        = "05"
 let g:base16_cterm0E = "05"
-if exists("base16colorspace") && base16colorspace == "256"
+" `base16_colorspace` variable is the preferred version but 
+" `base16colorspace` continues to exist for legacy reasons so we don't
+" break any users' setup
+if (exists("base16_colorspace") && base16_colorspace == "256") || (exists("base16colorspace") && base16colorspace == "256")
   let s:cterm01        = "18"
   let g:base16_cterm01 = "18"
   let s:cterm02        = "19"
@@ -142,7 +145,7 @@ elseif has("terminal")
         \ "#{{base07-hex}}",
         \ ]
 endif
-if exists("base16background") && base16background == "none"
+if exists("base16_background_transparent") && base16_background_transparent == "1"
   let s:guibg = "NONE"
   let s:ctermbg = "NONE"
 else
@@ -640,11 +643,11 @@ if has("nvim")
 endif
 
 " Java
-call <sid>hi("javaOperator",     s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("javaOperator", s:gui0D, "", s:cterm0D, "", "", "")
 
 " Remove functions
 delf <sid>hi
 
 " Remove color variables
-unlet s:gui00 s:gui01 s:gui02 s:gui03  s:gui04  s:gui05  s:gui06 s:gui07  s:gui08  s:gui09 s:gui0A  s:gui0B  s:gui0C  s:gui0D  s:gui0E s:gui0F s:guibg
+unlet s:gui00 s:gui01 s:gui02 s:gui03 s:gui04 s:gui05 s:gui06 s:gui07 s:gui08 s:gui09 s:gui0A s:gui0B s:gui0C s:gui0D s:gui0E s:gui0F s:guibg
 unlet s:cterm00 s:cterm01 s:cterm02 s:cterm03 s:cterm04 s:cterm05 s:cterm06 s:cterm07 s:cterm08 s:cterm09 s:cterm0A s:cterm0B s:cterm0C s:cterm0D s:cterm0E s:cterm0F s:ctermbg
