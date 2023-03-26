@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/tinted-theming/base16-vim)
 " Scheme name: Mountain
-" Scheme author: gnsfujiwara (https://github.com/gnsfujiwara) based on Mountain Theme (https://github.com/mountain-theme/Mountain)
+" Scheme author: gnsfujiwara (https://github.com/gnsfujiwara)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -26,12 +26,12 @@ let s:gui03        = "4c4c4c"
 let g:base16_gui03 = "4c4c4c"
 let s:gui04        = "ac8a8c"
 let g:base16_gui04 = "ac8a8c"
-let s:gui05        = "f0f0f0"
-let g:base16_gui05 = "f0f0f0"
+let s:gui05        = "cacaca"
+let g:base16_gui05 = "cacaca"
 let s:gui06        = "e7e7e7"
 let g:base16_gui06 = "e7e7e7"
-let s:gui07        = "cacaca"
-let g:base16_gui07 = "cacaca"
+let s:gui07        = "f0f0f0"
+let g:base16_gui07 = "f0f0f0"
 let s:gui08        = "ac8a8c"
 let g:base16_gui08 = "ac8a8c"
 let s:gui09        = "ceb188"
@@ -107,7 +107,7 @@ if has("nvim")
   let g:terminal_color_4 =  "#8f8aac"
   let g:terminal_color_5 =  "#ac8aac"
   let g:terminal_color_6 =  "#8aabac"
-  let g:terminal_color_7 =  "#f0f0f0"
+  let g:terminal_color_7 =  "#cacaca"
   let g:terminal_color_8 =  "#4c4c4c"
   let g:terminal_color_9 =  "#ac8a8c"
   let g:terminal_color_10 = "#8aac8b"
@@ -115,7 +115,7 @@ if has("nvim")
   let g:terminal_color_12 = "#8f8aac"
   let g:terminal_color_13 = "#ac8aac"
   let g:terminal_color_14 = "#8aabac"
-  let g:terminal_color_15 = "#cacaca"
+  let g:terminal_color_15 = "#f0f0f0"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -131,7 +131,7 @@ elseif has("terminal")
         \ "#8f8aac",
         \ "#ac8aac",
         \ "#8aabac",
-        \ "#f0f0f0",
+        \ "#cacaca",
         \ "#4c4c4c",
         \ "#ac8a8c",
         \ "#8aac8b",
@@ -139,7 +139,7 @@ elseif has("terminal")
         \ "#8f8aac",
         \ "#ac8aac",
         \ "#8aabac",
-        \ "#cacaca",
+        \ "#f0f0f0",
         \ ]
 endif
 
