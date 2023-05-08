@@ -70,7 +70,10 @@ let s:cterm0D        = "04"
 let g:base16_cterm0D = "04"
 let s:cterm0E        = "05"
 let g:base16_cterm0E = "05"
-if exists("base16colorspace") && base16colorspace == "256"
+" `base16_colorspace` variable is the preferred version but 
+" `base16colorspace` continues to exist for legacy reasons so we don't
+" break any users' setup
+if (exists("base16_colorspace") && base16_colorspace == "256") || (exists("base16colorspace") && base16colorspace == "256")
   let s:cterm01        = "18"
   let g:base16_cterm01 = "18"
   let s:cterm02        = "19"
@@ -142,6 +145,13 @@ elseif has("terminal")
         \ "#bbaadd",
         \ ]
 endif
+if exists("base16_background_transparent") && base16_background_transparent == "1"
+  let s:guibg = "NONE"
+  let s:ctermbg = "NONE"
+else
+  let s:guibg = s:gui00
+  let s:ctermbg = s:cterm00
+endif
 
 " Theme setup
 hi clear
@@ -195,15 +205,15 @@ fun <sid>hi(group, guifg, guibg, ctermfg, ctermbg, attr, guisp)
 endfun
 
 " Vim editor colors
-call <sid>hi("Normal",        s:gui05, s:gui00, s:cterm05, s:cterm00, "", "")
+call <sid>hi("Normal",        s:gui05, s:guibg, s:cterm05, s:ctermbg, "", "")
 call <sid>hi("Bold",          "", "", "", "", "bold", "")
 call <sid>hi("Debug",         s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("Directory",     s:gui0D, "", s:cterm0D, "", "", "")
-call <sid>hi("Error",         s:gui00, s:gui08, s:cterm00, s:cterm08, "", "")
-call <sid>hi("ErrorMsg",      s:gui08, s:gui00, s:cterm08, s:cterm00, "", "")
+call <sid>hi("Error",         s:guibg, s:gui08, s:ctermbg, s:cterm08, "", "")
+call <sid>hi("ErrorMsg",      s:gui08, s:guibg, s:cterm08, s:ctermbg, "", "")
 call <sid>hi("Exception",     s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("FoldColumn",    s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
-call <sid>hi("Folded",        s:gui02, s:gui00, s:cterm02, s:cterm00, "", "")
+call <sid>hi("FoldColumn",    s:gui03, s:guibg, s:cterm03, s:ctermbg, "", "")
+call <sid>hi("Folded",        s:gui02, s:guibg, s:cterm02, s:ctermbg, "", "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none", "")
 call <sid>hi("Italic",        "", "", "", "", "italic", "")
 call <sid>hi("Macro",         s:gui0C, "", s:cterm0C, "", "", "")
@@ -219,17 +229,17 @@ call <sid>hi("Underlined",    "", "", "", "", "underline", "fg")
 call <sid>hi("Visual",        "", s:gui02, "", s:cterm02, "", "")
 call <sid>hi("VisualNOS",     s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("WarningMsg",    s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("WildMenu",      s:gui00, s:gui05, s:cterm00, s:cterm05, "", "")
+call <sid>hi("WildMenu",      s:guibg, s:gui05, s:ctermbg, s:cterm05, "", "")
 call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
-call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
-call <sid>hi("Cursor",        s:gui05, s:gui00, "", "", "inverse", "")
+call <sid>hi("Conceal",       s:gui0D, s:guibg, s:cterm0D, s:ctermbg, "", "")
+call <sid>hi("Cursor",        s:gui05, s:guibg, "", "", "inverse", "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("Whitespace",    s:gui03, "", s:cterm03, "", "", "")
-call <sid>hi("LineNr",        s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
-call <sid>hi("SignColumn",    s:gui03, s:gui00, s:cterm03, s:cterm00, "", "")
+call <sid>hi("LineNr",        s:gui03, s:guibg, s:cterm03, s:ctermbg, "", "")
+call <sid>hi("SignColumn",    s:gui03, s:guibg, s:cterm03, s:ctermbg, "", "")
 call <sid>hi("StatusLine",    s:gui04, s:gui01, s:cterm04, s:cterm01, "none", "")
 call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
-call <sid>hi("VertSplit",     s:gui01, s:gui00, s:cterm01, s:cterm00, "none", "")
+call <sid>hi("VertSplit",     s:gui01, s:guibg, s:cterm01, s:ctermbg, "none", "")
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none", "")
@@ -269,7 +279,7 @@ call <sid>hi("StorageClass", s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("String",       s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("Structure",    s:gui0A, "", s:cterm0A, "", "", "")
 call <sid>hi("Tag",          s:gui0A, "", s:cterm0A, "", "", "")
-call <sid>hi("Todo",         s:gui08, s:gui00, s:cterm08, s:cterm00, "italic", "")
+call <sid>hi("Todo",         s:gui08, s:guibg, s:cterm08, s:ctermbg, "italic", "")
 call <sid>hi("Type",         s:gui0A, "", s:cterm0A, "", "none", "")
 call <sid>hi("Typedef",      s:gui0A, "", s:cterm0A, "", "", "")
 
@@ -304,16 +314,16 @@ call <sid>hi("InfoFloat",    s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
 call <sid>hi("HintFloat",    s:gui0C, s:gui01, s:cterm0C, s:cterm01, "", "")
 call <sid>hi("OkFloat",      s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
 
-call <sid>hi("ErrorHighlight",   "", "", s:cterm00, s:cterm08, "underline", s:gui08)
-call <sid>hi("WarningHighlight", "", "", s:cterm00, s:cterm09, "underline", s:gui09)
-call <sid>hi("InfoHighlight",    "", "", s:cterm00, s:cterm0D, "underline", s:gui0D)
-call <sid>hi("HintHighlight",    "", "", s:cterm00, s:cterm0C, "underline", s:gui0C)
-call <sid>hi("OkHighlight",      "", "", s:cterm00, s:cterm0B, "underline", s:gui0B)
+call <sid>hi("ErrorHighlight",   "", "", s:ctermbg, s:cterm08, "underline", s:gui08)
+call <sid>hi("WarningHighlight", "", "", s:ctermbg, s:cterm09, "underline", s:gui09)
+call <sid>hi("InfoHighlight",    "", "", s:ctermbg, s:cterm0D, "underline", s:gui0D)
+call <sid>hi("HintHighlight",    "", "", s:ctermbg, s:cterm0C, "underline", s:gui0C)
+call <sid>hi("OkHighlight",      "", "", s:ctermbg, s:cterm0B, "underline", s:gui0B)
 
-call <sid>hi("SpellBad",     "", "", s:cterm00, s:cterm08, "undercurl", s:gui08)
-call <sid>hi("SpellLocal",   "", "", s:cterm00, s:cterm0C, "undercurl", s:gui0C)
-call <sid>hi("SpellCap",     "", "", s:cterm00, s:cterm0D, "undercurl", s:gui0D)
-call <sid>hi("SpellRare",    "", "", s:cterm00, s:cterm0E, "undercurl", s:gui0E)
+call <sid>hi("SpellBad",     "", "", s:ctermbg, s:cterm08, "undercurl", s:gui08)
+call <sid>hi("SpellLocal",   "", "", s:ctermbg, s:cterm0C, "undercurl", s:gui0C)
+call <sid>hi("SpellCap",     "", "", s:ctermbg, s:cterm0D, "undercurl", s:gui0D)
+call <sid>hi("SpellRare",    "", "", s:ctermbg, s:cterm0E, "undercurl", s:gui0E)
 
 call <sid>hi("ReferenceText",   s:gui01, s:gui0A, s:cterm01, s:cterm0A, "", "")
 call <sid>hi("ReferenceRead",   s:gui01, s:gui0B, s:cterm01, s:cterm0B, "", "")
@@ -455,13 +465,13 @@ endif
 " Diff
 call <sid>hi("DiffAdd",      s:gui0B, s:gui01,  s:cterm0B, s:cterm01, "", "")
 call <sid>hi("DiffChange",   s:gui05, s:gui01,  s:cterm05, s:cterm01, "", "")
-call <sid>hi("DiffDelete",   s:gui02, s:gui00,  s:cterm02, s:cterm00, "", "")
+call <sid>hi("DiffDelete",   s:gui02, s:guibg,  s:cterm02, s:ctermbg, "", "")
 call <sid>hi("DiffText",     s:gui0D, s:gui01,  s:cterm0D, s:cterm01, "", "")
-call <sid>hi("DiffAdded",    s:gui0B, s:gui00,  s:cterm0B, s:cterm00, "", "")
-call <sid>hi("DiffFile",     s:gui08, s:gui00,  s:cterm08, s:cterm00, "", "")
-call <sid>hi("DiffNewFile",  s:gui0B, s:gui00,  s:cterm0B, s:cterm00, "", "")
-call <sid>hi("DiffLine",     s:gui0D, s:gui00,  s:cterm0D, s:cterm00, "", "")
-call <sid>hi("DiffRemoved",  s:gui08, s:gui00,  s:cterm08, s:cterm00, "", "")
+call <sid>hi("DiffAdded",    s:gui0B, s:guibg,  s:cterm0B, s:ctermbg, "", "")
+call <sid>hi("DiffFile",     s:gui08, s:guibg,  s:cterm08, s:ctermbg, "", "")
+call <sid>hi("DiffNewFile",  s:gui0B, s:guibg,  s:cterm0B, s:ctermbg, "", "")
+call <sid>hi("DiffLine",     s:gui0D, s:guibg,  s:cterm0D, s:ctermbg, "", "")
+call <sid>hi("DiffRemoved",  s:gui08, s:guibg,  s:cterm08, s:ctermbg, "", "")
 
 " Git
 call <sid>hi("gitcommitOverflow",       s:gui08, "", s:cterm08, "", "", "")
@@ -525,7 +535,7 @@ call <sid>hi("mailEmail",    s:gui0D, "", s:cterm0D, "", "", "")
 
 " Markdown
 call <sid>hi("markdownCode",              s:gui0B, "", s:cterm0B, "", "", "")
-call <sid>hi("markdownError",             s:gui05, s:gui00, s:cterm05, s:cterm00, "", "")
+call <sid>hi("markdownError",             s:gui05, s:guibg, s:cterm05, s:ctermbg, "", "")
 call <sid>hi("markdownCodeBlock",         s:gui0B, "", s:cterm0B, "", "", "")
 call <sid>hi("markdownHeadingDelimiter",  s:gui0D, "", s:cterm0D, "", "", "")
 
@@ -633,11 +643,11 @@ if has("nvim")
 endif
 
 " Java
-call <sid>hi("javaOperator",     s:gui0D, "", s:cterm0D, "", "", "")
+call <sid>hi("javaOperator", s:gui0D, "", s:cterm0D, "", "", "")
 
 " Remove functions
 delf <sid>hi
 
 " Remove color variables
-unlet s:gui00 s:gui01 s:gui02 s:gui03  s:gui04  s:gui05  s:gui06  s:gui07  s:gui08  s:gui09 s:gui0A  s:gui0B  s:gui0C  s:gui0D  s:gui0E  s:gui0F
-unlet s:cterm00 s:cterm01 s:cterm02 s:cterm03 s:cterm04 s:cterm05 s:cterm06 s:cterm07 s:cterm08 s:cterm09 s:cterm0A s:cterm0B s:cterm0C s:cterm0D s:cterm0E s:cterm0F
+unlet s:gui00 s:gui01 s:gui02 s:gui03 s:gui04 s:gui05 s:gui06 s:gui07 s:gui08 s:gui09 s:gui0A s:gui0B s:gui0C s:gui0D s:gui0E s:gui0F s:guibg
+unlet s:cterm00 s:cterm01 s:cterm02 s:cterm03 s:cterm04 s:cterm05 s:cterm06 s:cterm07 s:cterm08 s:cterm09 s:cterm0A s:cterm0B s:cterm0C s:cterm0D s:cterm0E s:cterm0F s:ctermbg
