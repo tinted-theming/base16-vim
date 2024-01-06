@@ -261,7 +261,9 @@ call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none", "")
 call <sid>hi("Delimiter",    s:gui05, "", s:cterm05, "", "", "")
-call <sid>hi("Deprecated",   "", "", "", "", "strikethrough", "")
+if has("patch-8.0.1038")
+  call <sid>hi("Deprecated",   "", "", "", "", "strikethrough", "")
+endif
 call <sid>hi("Float",        s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Function",     s:gui0D, "", s:cterm0D, "", "", "")
 call <sid>hi("Identifier",   s:gui05, "", s:cterm05, "", "none", "")
@@ -294,7 +296,9 @@ if has("nvim-0.8.0")
 endif
 
 " Standard highlights to be used by plugins
-call <sid>hi("Deprecated",   "", "", "", "", "strikethrough", "")
+if has("patch-8.0.1038")
+  call <sid>hi("Deprecated",   "", "", "", "", "strikethrough", "")
+endif
 call <sid>hi("SearchMatch",  s:gui0C, "", s:cterm0C, "", "", "")
 
 call <sid>hi("GitAddSign",           s:gui0B, "", s:cterm0B, "", "", "")
