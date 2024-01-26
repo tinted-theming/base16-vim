@@ -58,6 +58,13 @@ git clone git://github.com/tinted-theming/base16-vim.git base16
 cp base16/colors/*.vim .
 ```
 
+### Lazy.nvim
+```lua
+{
+    "tinted-theming/base16-vim",
+}
+```
+
 ### Manual neovim
 
 ```bash
