@@ -614,36 +614,16 @@ if has("nvim")
   hi! link DiagnosticUnderlineHint   HintHighlight
   hi! link DiagnosticUnderlineOk     OkHighlight
 
-  hi! link DiagnosticsVirtualTextError    ErrorSign
-  hi! link DiagnosticsVirtualTextWarning  WarningSign
-  hi! link DiagnosticsVirtualTextInfo     InfoSign
-  hi! link DiagnosticsVirtualTextHint     HintSign
-  hi! link DiagnosticsVirtualTextOk       OkSign
+  hi! link DiagnosticVirtualTextError    ErrorSign
+  hi! link DiagnosticVirtualTextWarning  WarningSign
+  hi! link DiagnosticVirtualTextInfo     InfoSign
+  hi! link DiagnosticVirtualTextHint     HintSign
+  hi! link DiagnosticVirtualTextOk       OkSign
 
-  " Remove untill endif on next nvim release
-  hi! link LspDiagnosticsSignError    ErrorSign
-  hi! link LspDiagnosticsSignWarning  WarningSign
-  hi! link LspDiagnosticsSignInfo     InfoSign
-  hi! link LspDiagnosticsSignHint     HintSign
-
-  hi! link LspDiagnosticsVirtualTextError    ErrorSign
-  hi! link LspDiagnosticsVirtualTextWarning  WarningSign
-  hi! link LspDiagnosticsVirtualTextInfo     InfoSign
-  hi! link LspDiagnosticsVirtualTextHint     HintSign
-
-  hi! link LspDiagnosticsFloatingError    ErrorFloat
-  hi! link LspDiagnosticsFloatingWarning  WarningFloat
-  hi! link LspDiagnosticsFloatingInfo     InfoFloat
-  hi! link LspDiagnosticsFloatingHint     HintFloat
-
-  hi! link LspDiagnosticsUnderlineError    ErrorHighlight
-  hi! link LspDiagnosticsUnderlineWarning  WarningHighlight
-  hi! link LspDiagnosticsUnderlineInfo     InfoHighlight
-  hi! link LspDiagnosticsUnderlineHint     HintHighlight
-
-  hi! link LspReferenceText   ReferenceText
-  hi! link LspReferenceRead   ReferenceRead
-  hi! link LspReferenceWrite  ReferenceWrite
+  hi! link DiagnosticSignError  ErrorSign
+  hi! link DiagnosticSignWarn   WarningSign
+  hi! link DiagnosticSignInfo   InfoSign
+  hi! link DiagnosticSignHint   HintSign
 endif
 
 " Java
