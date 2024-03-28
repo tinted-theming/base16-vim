@@ -293,6 +293,86 @@ if has("nvim-0.8.0")
   call <sid>hi("@variable.builtin", s:gui05, "", s:cterm05, "", "italic", "")
   call <sid>hi("@text.reference",   s:gui08, "", s:cterm08, "", "", "")
   call <sid>hi("@text.uri",         s:gui08, "", s:cterm08, "", "italic", "")
+
+  " Annotations & Attributes
+  call <sid>hi("@annotation",                          s:gui0E, "", s:cterm0E, "", "", "")
+  call <sid>hi("@attribute",                           s:gui0D, "", s:cterm0D, "", "", "")
+
+  " Booleans, Characters & Comments
+  call <sid>hi("@boolean",                             s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("@character",                           s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("@character.special",                   s:gui0F, "", s:cterm0F, "", "", "")
+  call <sid>hi("@comment",                             s:gui03, "", s:cterm03, "", "", "")
+
+  " Conditionals, Constants & Debugging
+  call <sid>hi("@keyword.conditional",                 s:gui0E, "", s:cterm0E, "", "", "")
+  call <sid>hi("@constant",                            s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("@constant.builtin",                    s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("@constant.macro",                      s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("@keyword.debug",                       s:gui08, "", s:cterm08, "", "", "")
+
+  " Directives & Exceptions
+  call <sid>hi("@keyword.directive.define",            s:gui0E, "", s:cterm0E, "", "", "")
+  call <sid>hi("@keyword.exception",                   s:gui0E, "", s:cterm0E, "", "", "")
+
+  " Floats & Functions
+  call <sid>hi("@number.float",                        s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("@function",                            s:gui0D, "", s:cterm0D, "", "", "")
+  call <sid>hi("@function.builtin",                    s:gui0D, "", s:cterm0D, "", "", "")
+  call <sid>hi("@function.call",                       s:gui0D, "", s:cterm0D, "", "", "")
+  call <sid>hi("@function.macro",                      s:gui08, "", s:cterm08, "", "", "")
+
+  " Imports, Operators & Returns
+  call <sid>hi("@keyword.import",                      s:gui0E, "", s:cterm0E, "", "", "")
+  call <sid>hi("@keyword.coroutine",                   s:gui0E, "", s:cterm0E, "", "", "")
+  call <sid>hi("@keyword.operator",                    s:gui05, "", s:cterm05, "", "", "")
+  call <sid>hi("@keyword.return",                      s:gui0E, "", s:cterm0E, "", "", "")
+
+  " Methods & Namespaces
+  call <sid>hi("@function.method",                     s:gui0D, "", s:cterm0D, "", "", "")
+  call <sid>hi("@function.method.call",                s:gui0D, "", s:cterm0D, "", "", "")
+  call <sid>hi("@namespace.builtin",                   s:gui0E, "", s:cterm0E, "", "", "")
+
+  " Numbers & Directives
+  call <sid>hi("@none",                                s:gui05, "", s:cterm05, "", "", "")
+  call <sid>hi("@number",                              s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("@keyword.directive",                   s:gui0E, "", s:cterm0E, "", "", "")
+
+  " Repeats, Storage & Strings
+  call <sid>hi("@keyword.repeat",                      s:gui0E, "", s:cterm0E, "", "", "")
+  call <sid>hi("@keyword.storage",                     s:gui0E, "", s:cterm0E, "", "", "")
+  call <sid>hi("@string",                              s:gui0B, "", s:cterm0B, "", "", "")
+
+  " Tags & Markup
+  call <sid>hi("@markup.link.label",                   s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.link.label.symbol",            s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@tag",                                 s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("@tag.attribute",                       s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@tag.delimiter",                       s:gui0F, "", s:cterm0F, "", "", "")
+
+  " More Markup
+  call <sid>hi("@markup",                              s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.environment",                  s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.environment.name",             s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.raw",                          s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("@markup.math",                         s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.strong",                       s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.emphasis",                     s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.strikethrough",                s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.underline",                    s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.heading",                      s:gui0D, "", s:cterm0D, "", "", "")
+
+  " Comments & Types
+  call <sid>hi("@comment.note",                        s:gui03, "", s:cterm03, "", "", "")
+  call <sid>hi("@comment.error",                       s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("@comment.hint",                        s:gui0B, "", s:cterm0B, "", "", "")
+  call <sid>hi("@comment.info",                        s:gui0D, "", s:cterm0D, "", "", "")
+  call <sid>hi("@comment.warning",                     s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("@comment.todo",                        s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@markup.link.url",                     s:gui09, "", s:cterm09, "", "", "")
+  call <sid>hi("@type",                                s:gui0A, "", s:cterm0A, "", "", "")
+  call <sid>hi("@type.definition",                     s:gui0E, "", s:cterm0E, "", "", "")
+  call <sid>hi("@type.qualifier",                      s:gui0E, "", s:cterm0E, "", "", "")
 endif
 
 " Standard highlights to be used by plugins
@@ -614,16 +694,36 @@ if has("nvim")
   hi! link DiagnosticUnderlineHint   HintHighlight
   hi! link DiagnosticUnderlineOk     OkHighlight
 
-  hi! link DiagnosticVirtualTextError    ErrorSign
-  hi! link DiagnosticVirtualTextWarning  WarningSign
-  hi! link DiagnosticVirtualTextInfo     InfoSign
-  hi! link DiagnosticVirtualTextHint     HintSign
-  hi! link DiagnosticVirtualTextOk       OkSign
+  hi! link DiagnosticsVirtualTextError    ErrorSign
+  hi! link DiagnosticsVirtualTextWarning  WarningSign
+  hi! link DiagnosticsVirtualTextInfo     InfoSign
+  hi! link DiagnosticsVirtualTextHint     HintSign
+  hi! link DiagnosticsVirtualTextOk       OkSign
 
-  hi! link DiagnosticSignError  ErrorSign
-  hi! link DiagnosticSignWarn   WarningSign
-  hi! link DiagnosticSignInfo   InfoSign
-  hi! link DiagnosticSignHint   HintSign
+  " Remove untill endif on next nvim release
+  hi! link LspDiagnosticsSignError    ErrorSign
+  hi! link LspDiagnosticsSignWarning  WarningSign
+  hi! link LspDiagnosticsSignInfo     InfoSign
+  hi! link LspDiagnosticsSignHint     HintSign
+
+  hi! link LspDiagnosticsVirtualTextError    ErrorSign
+  hi! link LspDiagnosticsVirtualTextWarning  WarningSign
+  hi! link LspDiagnosticsVirtualTextInfo     InfoSign
+  hi! link LspDiagnosticsVirtualTextHint     HintSign
+
+  hi! link LspDiagnosticsFloatingError    ErrorFloat
+  hi! link LspDiagnosticsFloatingWarning  WarningFloat
+  hi! link LspDiagnosticsFloatingInfo     InfoFloat
+  hi! link LspDiagnosticsFloatingHint     HintFloat
+
+  hi! link LspDiagnosticsUnderlineError    ErrorHighlight
+  hi! link LspDiagnosticsUnderlineWarning  WarningHighlight
+  hi! link LspDiagnosticsUnderlineInfo     InfoHighlight
+  hi! link LspDiagnosticsUnderlineHint     HintHighlight
+
+  hi! link LspReferenceText   ReferenceText
+  hi! link LspReferenceRead   ReferenceRead
+  hi! link LspReferenceWrite  ReferenceWrite
 endif
 
 " Java
