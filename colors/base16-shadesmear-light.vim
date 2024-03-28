@@ -580,6 +580,11 @@ hi! link GitGutterChange         GitChangeSign
 hi! link GitGutterDelete         GitDeleteSign
 hi! link GitGutterChangeDelete   GitChangeDeleteSign
 
+" indent-blankline (nvim)
+if has("nvim")
+  call <sid>hi("@ibl.indent.char.1",s:gui01, "", s:cterm01, "", "", "")
+endif
+
 " HTML
 call <sid>hi("htmlBold",    s:gui05, "", s:cterm0A, "", "bold", "")
 call <sid>hi("htmlItalic",  s:gui05, "", s:cterm0E, "", "italic", "")
