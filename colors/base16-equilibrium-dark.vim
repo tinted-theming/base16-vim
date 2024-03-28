@@ -288,7 +288,7 @@ call <sid>hi("Typedef",      s:gui0A, "", s:cterm0A, "", "", "")
 " Treesitter
 if has("nvim-0.8.0")
   call <sid>hi("@field",            s:gui08, "", s:cterm08, "", "", "")
-  call <sid>hi("@property",            s:gui08, "", s:cterm08, "", "", "")
+  call <sid>hi("@property",         s:gui08, "", s:cterm08, "", "", "")
   call <sid>hi("@namespace",        s:gui05, "", s:cterm05, "", "italic", "")
   call <sid>hi("@variable.builtin", s:gui05, "", s:cterm05, "", "italic", "")
   call <sid>hi("@text.reference",   s:gui08, "", s:cterm08, "", "", "")
