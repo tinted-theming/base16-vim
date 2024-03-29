@@ -1,5 +1,7 @@
 # Base16 Vim
 
+[![Matrix Chat](https://img.shields.io/matrix/tinted-theming:matrix.org)](https://matrix.to/#/#tinted-theming:matrix.org)
+
 Supports console [Vim][1], graphical Vim and [Neovim][2].
 
 Over [200 themes][3] plus light/dark variations are available. Here are
