@@ -9,17 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fetch the repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
       - name: Fetch the schemes repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          repository: tinted-theming/base16-schemes
+          repository: tinted-theming/schemes
           path: schemes
           token: ${{ secrets.BOT_ACCESS_TOKEN }}
       - name: Update schemes
         uses: tinted-theming/base16-builder-go@latest
+        with:
+          path: schemes/base16
       - name: Commit the changes, if any
         uses: stefanzweifel/git-auto-commit-action@v4
         with:

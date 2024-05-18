@@ -182,7 +182,7 @@ instructions.
 
 [1]: https://github.com/vim/vim
 [2]: https://github.com/neovim/neovim
-[3]: https://github.com/tinted-theming/base16-schemes
+[3]: https://github.com/tinted-theming/schemes
 [4]: https://github.com/tinted-theming/home#official-templates
 [5]: https://github.com/tinted-theming/home#unofficial-templates
 [6]: https://github.com/tinted-theming/base16-shell
