@@ -13,8 +13,8 @@ automatically.
 ### Usage for template editing
 
 1. Clone the template repository onto your system
-1. Download the [latest base16-builder-go binary]
-1. Execute the binary with the `-template-dir` arg and provide
+2. Download the [latest base16-builder-go binary]
+3. Execute the binary with the `-template-dir` arg and provide
    `/path/to/base16-vim` 
 
 Or the above steps represented in shell commands:
@@ -27,16 +27,16 @@ Or the above steps represented in shell commands:
 ### Usage for adding or editing a colorscheme
 
 1. Clone the base16-vim
-1. Clone [base16-schemes]
-1. Download the [latest base16-builder-go binary]
-1. Execute the binary with 
-  - `-schemes-dir` arg - provide `/path/to/base16-scehemes`
+2. Clone [schemes]
+3. Download the [latest base16-builder-go binary]
+4. Execute the binary with 
+  - `-schemes-dir` arg - provide `/path/to/schemes/base16`
   - `-template-dir` arg - provide `/path/to/base16-vim`
-    `base16-vim` repository)
+    (`base16-vim` repository)
 
 ```shell
 /path/to/base16-builder-go-binary \
-  -schemes-dir "/path/to/base16-schemes" \
+  -schemes-dir "/path/to/schemes/base16" \
   -template-dir "/path/to/base16-vim"
 ```
 
@@ -58,7 +58,7 @@ Please follow the instructions in the issue templates:
 - [Issue template for feature requests]
 
 [base16-builder-go]: https://github.com/tinted-theming/base16-builder-go
-[base16-schemes]: https://github.com/tinted-theming/base16-schemes
+[schemes]: https://github.com/tinted-theming/schemes
 [GitHub Action]: .github/workflows/update.yml
 [latest base16-builder-go binary]: https://github.com/tinted-theming/base16-builder-go/releases
 [PR template]: .github/pull_request_template.md
