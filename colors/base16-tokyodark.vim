@@ -2,7 +2,7 @@
 
 " base16-vim (https://github.com/tinted-theming/base16-vim)
 " Scheme name: Tokyodark
-" Scheme author: Tiagovla (https://github.com/tiagovla/)
+" Scheme author: Jamy Golden (https://github.com/JamyGolden), Based on Tokyodark.nvim (https://github.com/tiagovla/tokyodark.nvim)
 " Template author: Tinted Theming (https://github.com/tinted-theming)
 
 " This enables the coresponding base16-shell script to run so that
@@ -18,34 +18,34 @@ endif
 " GUI color definitions
 let s:gui00        = "11121d"
 let g:base16_gui00 = "11121d"
-let s:gui01        = "151621"
-let g:base16_gui01 = "151621"
-let s:gui02        = "43444f"
-let g:base16_gui02 = "43444f"
-let s:gui03        = "393a45"
-let g:base16_gui03 = "393a45"
-let s:gui04        = "1b1c27"
-let g:base16_gui04 = "1b1c27"
-let s:gui05        = "abb2bf"
-let g:base16_gui05 = "abb2bf"
-let s:gui06        = "555661"
-let g:base16_gui06 = "555661"
-let s:gui07        = "2c2d38"
-let g:base16_gui07 = "2c2d38"
-let s:gui08        = "a485dd"
-let g:base16_gui08 = "a485dd"
-let s:gui09        = "a485dd"
-let g:base16_gui09 = "a485dd"
-let s:gui0A        = "7199ee"
-let g:base16_gui0A = "7199ee"
-let s:gui0B        = "d7a65f"
-let g:base16_gui0B = "d7a65f"
-let s:gui0C        = "a485dd"
-let g:base16_gui0C = "a485dd"
-let s:gui0D        = "95c561"
-let g:base16_gui0D = "95c561"
-let s:gui0E        = "ee6d85"
-let g:base16_gui0E = "ee6d85"
+let s:gui01        = "212234"
+let g:base16_gui01 = "212234"
+let s:gui02        = "212234"
+let g:base16_gui02 = "212234"
+let s:gui03        = "353945"
+let g:base16_gui03 = "353945"
+let s:gui04        = "4a5057"
+let g:base16_gui04 = "4a5057"
+let s:gui05        = "a0a8cd"
+let g:base16_gui05 = "a0a8cd"
+let s:gui06        = "abb2bf"
+let g:base16_gui06 = "abb2bf"
+let s:gui07        = "bcc2dc"
+let g:base16_gui07 = "bcc2dc"
+let s:gui08        = "ee6d85"
+let g:base16_gui08 = "ee6d85"
+let s:gui09        = "f6955b"
+let g:base16_gui09 = "f6955b"
+let s:gui0A        = "d7a65f"
+let g:base16_gui0A = "d7a65f"
+let s:gui0B        = "95c561"
+let g:base16_gui0B = "95c561"
+let s:gui0C        = "9fbbf3"
+let g:base16_gui0C = "9fbbf3"
+let s:gui0D        = "7199ee"
+let g:base16_gui0D = "7199ee"
+let s:gui0E        = "a485dd"
+let g:base16_gui0E = "a485dd"
 let s:gui0F        = "773440"
 let g:base16_gui0F = "773440"
 
@@ -104,21 +104,21 @@ endif
 " Neovim terminal colours
 if has("nvim")
   let g:terminal_color_0 =  "#11121d"
-  let g:terminal_color_1 =  "#a485dd"
-  let g:terminal_color_2 =  "#d7a65f"
-  let g:terminal_color_3 =  "#7199ee"
-  let g:terminal_color_4 =  "#95c561"
-  let g:terminal_color_5 =  "#ee6d85"
-  let g:terminal_color_6 =  "#a485dd"
-  let g:terminal_color_7 =  "#abb2bf"
-  let g:terminal_color_8 =  "#393a45"
-  let g:terminal_color_9 =  "#a485dd"
-  let g:terminal_color_10 = "#d7a65f"
-  let g:terminal_color_11 = "#7199ee"
-  let g:terminal_color_12 = "#95c561"
-  let g:terminal_color_13 = "#ee6d85"
-  let g:terminal_color_14 = "#a485dd"
-  let g:terminal_color_15 = "#2c2d38"
+  let g:terminal_color_1 =  "#ee6d85"
+  let g:terminal_color_2 =  "#95c561"
+  let g:terminal_color_3 =  "#d7a65f"
+  let g:terminal_color_4 =  "#7199ee"
+  let g:terminal_color_5 =  "#a485dd"
+  let g:terminal_color_6 =  "#9fbbf3"
+  let g:terminal_color_7 =  "#a0a8cd"
+  let g:terminal_color_8 =  "#353945"
+  let g:terminal_color_9 =  "#ee6d85"
+  let g:terminal_color_10 = "#95c561"
+  let g:terminal_color_11 = "#d7a65f"
+  let g:terminal_color_12 = "#7199ee"
+  let g:terminal_color_13 = "#a485dd"
+  let g:terminal_color_14 = "#9fbbf3"
+  let g:terminal_color_15 = "#bcc2dc"
   let g:terminal_color_background = g:terminal_color_0
   let g:terminal_color_foreground = g:terminal_color_5
   if &background == "light"
@@ -128,21 +128,21 @@ if has("nvim")
 elseif has("terminal")
   let g:terminal_ansi_colors = [
         \ "#11121d",
-        \ "#a485dd",
+        \ "#ee6d85",
+        \ "#95c561",
         \ "#d7a65f",
         \ "#7199ee",
-        \ "#95c561",
+        \ "#a485dd",
+        \ "#9fbbf3",
+        \ "#a0a8cd",
+        \ "#353945",
         \ "#ee6d85",
-        \ "#a485dd",
-        \ "#abb2bf",
-        \ "#393a45",
-        \ "#a485dd",
+        \ "#95c561",
         \ "#d7a65f",
         \ "#7199ee",
-        \ "#95c561",
-        \ "#ee6d85",
         \ "#a485dd",
-        \ "#2c2d38",
+        \ "#9fbbf3",
+        \ "#bcc2dc",
         \ ]
 endif
 if exists("base16_background_transparent") && base16_background_transparent == "1"
