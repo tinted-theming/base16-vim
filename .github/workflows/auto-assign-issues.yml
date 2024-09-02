@@ -6,6 +6,6 @@ on:
 
 jobs:
   auto-assign:
-    uses: tinted-theming/home/.github/workflows/shared-auto-assign-issues.yml@main
+    uses: "tinted-theming/home/.github/workflows/shared-auto-assign-issues.yml@main"
     secrets:
       token: ${{ secrets.BOT_ACCESS_TOKEN }}
