@@ -70,7 +70,7 @@ let s:cterm0D        = "04"
 let g:base16_cterm0D = "04"
 let s:cterm0E        = "05"
 let g:base16_cterm0E = "05"
-" `base16_colorspace` variable is the preferred version but 
+" `base16_colorspace` variable is the preferred version but
 " `base16colorspace` continues to exist for legacy reasons so we don't
 " break any users' setup
 if (exists("base16_colorspace") && base16_colorspace == "256") || (exists("base16colorspace") && base16colorspace == "256")
@@ -303,7 +303,7 @@ if has("nvim-0.8.0")
   call <sid>hi("@boolean",                             s:gui09, "", s:cterm09, "", "", "")
   call <sid>hi("@character",                           s:gui08, "", s:cterm08, "", "", "")
   call <sid>hi("@character.special",                   s:gui0F, "", s:cterm0F, "", "", "")
-  call <sid>hi("@comment",                             s:gui03, "", s:cterm03, "", "", "")
+  call <sid>hi("@comment",                             s:gui03, "", s:cterm03, "", "italic", "")
 
   " Conditionals, Constants & Debugging
   call <sid>hi("@keyword.conditional",                 s:gui0E, "", s:cterm0E, "", "", "")
