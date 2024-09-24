@@ -1,3 +1,9 @@
-default: 
+base16:
     extension: .vim
     output: colors
+    supported-systems: [base16]
+
+base24:
+    extension: .vim
+    output: colors
+    supported-systems: [base24]
