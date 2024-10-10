@@ -27,14 +27,35 @@ themes for your terminal of choice.
 
 ## Installation
 
-Add `colorscheme base16-default-dark` to your `~/.vimrc`.
+Add `colorscheme base16-ayu-dark` to your `~/.vimrc`.
 
-### Vundle
+### Lazy.nvim
 
-Add the following to your `~/.vimrc` file and run `PluginInstall` in Vim.
+```lua
+{
+  "tinted-theming/tinted-vim",
+  config = function()
+    vim.cmd.colorscheme 'base16-ayu-dark'
+  end,
+}
+```
 
-```vim
-Plugin 'tinted-theming/base16-vim'
+### Packer
+
+```lua
+use {
+  "tinted-theming/tinted-vim",
+  config = function()
+    vim.cmd.colorscheme 'base16-ayu-dark'
+  end,
+}
+```
+
+### Pathogen
+
+```sh
+cd ~/.vim/bundle
+git clone https://github.com/tinted-theming/base16-vim.git
 ```
 
 ### vim-plug
@@ -45,11 +66,12 @@ Add the following to your `~/.vimrc` file and run `PlugInstall` in Vim.
 Plug 'tinted-theming/base16-vim'
 ```
 
-### Pathogen
+### Vundle
 
-```bash
-cd ~/.vim/bundle
-git clone https://github.com/tinted-theming/base16-vim.git
+Add the following to your `~/.vimrc` file and run `PluginInstall` in Vim.
+
+```vim
+Plugin 'tinted-theming/base16-vim'
 ```
 
 ### Manual
@@ -67,11 +89,36 @@ cp base16/colors/*.vim .
 }
 ```
 
+#### Symlink
+
+You can use a symlink to easily keep things updated. Update your vim
+colors every time you do a `git pull` on the `tinted-vim` repo.
+
+1. Clone `tinted-vim` somewhere:
+
+```sh
+git clone git://github.com/tinted-theming/base16-vim.git ~/projects/base16-vim
+```
+
+2. Remove your old vim/nvim `colors/` directory:
+
+```sh
+rm -r ~/.vim/colors # Or ~/.config/nvim/colors for Neovim
+```
+
+3. Symlink the colors directory:
+
+```sh 
+ln -s ~/projects/base16-vim/colors ~/.vim/colors
+# Or for Neovim
+# ln -s ~/projects/base16-vim/colors ~/.config/nvim/colors
+```
+
 ### Manual neovim
 
 ```bash
 cd ~/.config/nvim/colors
-git clone git://github.com/tinted-theming/base16-vim.git base16
+git clone git://github.com/tinted-theming/base16-vim.git base16-vim
 cp base16/colors/*.vim .
 ```
 
@@ -79,7 +126,7 @@ cp base16/colors/*.vim .
 
 If using a Base16 terminal theme designed to keep the 16 ANSI colors
 intact (a "256" variation) **and** have sucessfully modified your 256
-colorspace with [base16-shell][6].This will cause vim to access the
+colorspace with [tinted-shell][6].This will cause vim to access the
 colours in the modified 256 colorspace. Please **do not** enable this
 simply because you have a 256 color terminal as this will cause colors
 to be displayed incorrectly.
@@ -185,7 +232,7 @@ instructions.
 [3]: https://github.com/tinted-theming/schemes
 [4]: https://github.com/tinted-theming/home#official-templates
 [5]: https://github.com/tinted-theming/home#unofficial-templates
-[6]: https://github.com/tinted-theming/base16-shell
+[6]: https://github.com/tinted-theming/tinted-shell
 [7]: https://github.com/vim/vim/blob/23c1b2b018c8121ca5fcc247e37966428bf8ca66/runtime/doc/options.txt#L7876
 [8]: https://neovim.io/doc/user/options.html#'termguicolors'
 [9]: CONTRIBUTING.md
