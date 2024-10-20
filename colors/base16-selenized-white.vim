@@ -1,6 +1,6 @@
 " vi:syntax=vim
 
-" base16-vim (https://github.com/tinted-theming/base16-vim)
+" tinted-vim (https://github.com/tinted-theming/tinted-vim)
 " Scheme name: selenized-white
 " Scheme author: Jan Warchol (https://github.com/jan-warchol/selenized) / adapted to base16 by ali
 " Template author: Tinted Theming (https://github.com/tinted-theming)
@@ -11,42 +11,63 @@
 "   let g:base16_shell_path=base16-builder/output/shell/
 if !has("gui_running")
   if exists("g:base16_shell_path")
-    execute "silent !/bin/sh ".g:base16_shell_path."/base16-selenized-white.sh"
+    execute "silent !/bin/sh ".g:base16_shell_path."/base16/selenized-white.sh"
+  endif
+  if exists("g:tinted_shell_path")
+    execute "silent !/bin/sh ".g:tinted_shell_path."/base16/selenized-white.sh"
   endif
 endif
 
 " GUI color definitions
 let s:gui00        = "ffffff"
-let g:base16_gui00 = "ffffff"
+let g:tinted_gui00 = "ffffff"
 let s:gui01        = "ebebeb"
-let g:base16_gui01 = "ebebeb"
+let g:tinted_gui01 = "ebebeb"
 let s:gui02        = "cdcdcd"
-let g:base16_gui02 = "cdcdcd"
+let g:tinted_gui02 = "cdcdcd"
 let s:gui03        = "878787"
-let g:base16_gui03 = "878787"
+let g:tinted_gui03 = "878787"
 let s:gui04        = "878787"
-let g:base16_gui04 = "878787"
+let g:tinted_gui04 = "878787"
 let s:gui05        = "474747"
-let g:base16_gui05 = "474747"
+let g:tinted_gui05 = "474747"
 let s:gui06        = "282828"
-let g:base16_gui06 = "282828"
+let g:tinted_gui06 = "282828"
 let s:gui07        = "282828"
-let g:base16_gui07 = "282828"
+let g:tinted_gui07 = "282828"
 let s:gui08        = "bf0000"
-let g:base16_gui08 = "bf0000"
+let g:tinted_gui08 = "bf0000"
 let s:gui09        = "ba3700"
-let g:base16_gui09 = "ba3700"
+let g:tinted_gui09 = "ba3700"
 let s:gui0A        = "af8500"
-let g:base16_gui0A = "af8500"
+let g:tinted_gui0A = "af8500"
 let s:gui0B        = "008400"
-let g:base16_gui0B = "008400"
+let g:tinted_gui0B = "008400"
 let s:gui0C        = "009a8a"
-let g:base16_gui0C = "009a8a"
+let g:tinted_gui0C = "009a8a"
 let s:gui0D        = "0054cf"
-let g:base16_gui0D = "0054cf"
+let g:tinted_gui0D = "0054cf"
 let s:gui0E        = "6b40c3"
-let g:base16_gui0E = "6b40c3"
+let g:tinted_gui0E = "6b40c3"
 let s:gui0F        = "dd0f9d"
+let g:tinted_gui0F = "dd0f9d"
+
+" Legacy
+let g:base16_gui00 = "ffffff"
+let g:base16_gui01 = "ebebeb"
+let g:base16_gui02 = "cdcdcd"
+let g:base16_gui03 = "878787"
+let g:base16_gui04 = "878787"
+let g:base16_gui05 = "474747"
+let g:base16_gui06 = "282828"
+let g:base16_gui07 = "282828"
+let g:base16_gui08 = "bf0000"
+let g:base16_gui09 = "ba3700"
+let g:base16_gui0A = "af8500"
+let g:base16_gui0B = "008400"
+let g:base16_gui0C = "009a8a"
+let g:base16_gui0D = "0054cf"
+let g:base16_gui0E = "6b40c3"
 let g:base16_gui0F = "dd0f9d"
 
 " Terminal color definitions
@@ -70,10 +91,10 @@ let s:cterm0D        = "04"
 let g:base16_cterm0D = "04"
 let s:cterm0E        = "05"
 let g:base16_cterm0E = "05"
-" `base16_colorspace` variable is the preferred version but
-" `base16colorspace` continues to exist for legacy reasons so we don't
-" break any users' setup
-if (exists("base16_colorspace") && base16_colorspace == "256") || (exists("base16colorspace") && base16colorspace == "256")
+" `tinted_colorspace` variable is the preferred version but
+" `base16_colorspace` and `base16colorspace` continues to exist for legacy
+" reasons so we don't break any users' setup
+if (exists("tinted_colorspace") && tinted_colorspace == "256") || (exists("base16_colorspace") && base16_colorspace == "256") || (exists("base16colorspace") && base16colorspace == "256")
   let s:cterm01        = "18"
   let g:base16_cterm01 = "18"
   let s:cterm02        = "19"
@@ -145,7 +166,8 @@ elseif has("terminal")
         \ "#282828",
         \ ]
 endif
-if exists("base16_background_transparent") && base16_background_transparent == "1"
+" `base16_background_transparent` is a legacy property
+if (exists("base16_background_transparent") && base16_background_transparent == "1") || (exists("tinted_background_transparent") && tinted_background_transparent == "1")
   let s:guibg = "NONE"
   let s:ctermbg = "NONE"
 else
@@ -421,7 +443,6 @@ if has("nvim-0.8.0")
   endif
 endif
 
-
 " Standard highlights to be used by plugins
 if has("patch-8.0.1038")
   call <sid>hi("Deprecated",   "", "", "", "", "strikethrough", "")
@@ -629,7 +650,7 @@ hi! link GitGutterChangeDelete   GitChangeDeleteSign
 
 " indent-blankline (nvim)
 if has("nvim")
-  call <sid>hi("@ibl.indent.char.1",s:gui01, "", s:cterm01, "", "", "")
+  call <sid>hi("@ibl.indent.char", s:gui01, "", s:cterm01, "", "", "")
 endif
 
 " HTML

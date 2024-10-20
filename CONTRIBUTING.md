@@ -13,16 +13,16 @@ automatically.
 ### Usage for template editing
 
 1. Install [tinted-builder-rust]
-1. `tinted-builder-rust build path/to/base16-vim`
+1. `tinted-builder-rust build path/to/tinted-vim`
 
 ### Usage for adding or editing a colorscheme
 
-1. Clone base16-vim
+1. Clone tinted-vim
 1. Install [tinted-builder-rust]
-1. Execute `tinted-builder-rust build path/to/base16-vim`
+1. Execute `tinted-builder-rust build path/to/tinted-vim`
 
 ```shell
-tinted-builder-rust build /path/to/base16-vim \
+tinted-builder-rust build /path/to/tinted-vim \
   --schemes-dir /path/to/tinted-schemes
 ```
 

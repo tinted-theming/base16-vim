@@ -1,3 +1,7 @@
-default: 
-    extension: .vim
-    output: colors
+base16:
+    filename: colors/{{ scheme-system }}-{{ scheme-slug }}.vim
+    supported-systems: [base16]
+
+base24:
+    filename: colors/{{ scheme-system }}-{{ scheme-slug }}.vim
+    supported-systems: [base24]
